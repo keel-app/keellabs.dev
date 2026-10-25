@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keel Labs – Small, sturdy desktop apps</title>
+<meta name="description" content="Keel Labs makes native desktop apps for macOS, Windows and Linux: Keel, a local dev stack without Docker, and DauKey, a Vietnamese input method.">
+<meta property="og:title" content="Keel Labs">
+<meta property="og:description" content="Small, sturdy desktop apps for macOS, Windows and Linux.">
+<meta property="og:image" content="https://keellabs.dev/img/keellabs-256.png">
+<link rel="icon" href="img/keellabs.svg" type="image/svg+xml">
+<link rel="icon" href="img/keellabs-64.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#"><img src="img/keellabs.svg" alt="" width="30" height="30"><span>Keel Labs</span></a>
+    <nav aria-label="Sections">
+      <a href="#apps">Apps</a>
+      <a href="#how">How we build</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Keel Labs</p>
+      <h1>Small, sturdy apps for the work you do every day.</h1>
+      <p class="lead">A keel keeps a boat steady and on course. That is the job of our apps too:
+        native desktop tools for macOS, Windows and Linux that do one thing well and stay out of your way.</p>
+    </div>
+  </section>
+
+  <section id="apps" class="section">
+    <div class="wrap">
+      <h2 class="visually-hidden">Apps</h2>
+      <div class="apps">
+        <article class="app keel">
+          <div class="app-head">
+            <img src="img/keel.png" alt="" width="72" height="72">
+            <div>
+              <h3>Keel</h3>
+              <p class="tagline">Your local dev stack, without Docker.</p>
+            </div>
+          </div>
+          <ul>
+            <li>PHP, Node.js, Caddy, Nginx, Apache, MariaDB, PostgreSQL, Redis and more, installed natively in a click</li>
+            <li>Local sites with HTTPS on <code>.test</code>, tunnels to share them, Mailpit for dev mail</li>
+            <li>Everything in its own folder: uninstall and your system is untouched</li>
+          </ul>
+          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-keel-version>v1.0.2</span></p>
+          <a class="button" href="https://keel.keellabs.dev">Visit Keel</a>
+        </article>
+
+        <article class="app daukey">
+          <div class="app-head">
+            <img src="img/daukey.png" alt="" width="72" height="72">
+            <div>
+              <h3>DauKey</h3>
+              <p class="tagline">Vietnamese typing that works the same on every computer.</p>
+            </div>
+          </div>
+          <ul>
+            <li>Telex, VNI and VIQR with one engine on macOS, Windows and Linux, so every machine types alike</li>
+            <li>Leaves English words alone, expands shortcuts like <code>vn</code> → Việt Nam</li>
+            <li>Ctrl+Shift switches Vietnamese/English without taking over your apps' shortcuts</li>
+          </ul>
+          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-daukey-version>v1.0.0</span></p>
+          <a class="button" href="https://daukey.keellabs.dev" hreflang="vi">Visit DauKey <small>(in Vietnamese)</small></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section alt">
+    <div class="wrap">
+      <h2>How we build</h2>
+      <div class="principles">
+        <div>
+          <h3>Native first</h3>
+          <p>Rust, C++ and Swift underneath, and no bundled browser engine. Our apps start fast and stay light on memory and battery.</p>
+        </div>
+        <div>
+          <h3>Every platform, for real</h3>
+          <p>macOS, Windows and Linux get the same features and the same care, not a port that lags behind.</p>
+        </div>
+        <div>
+          <h3>Your machine stays yours</h3>
+          <p>Free to download, no accounts, no ads. Apps keep to their own folders and clean up after themselves.</p>
+        </div>
+        <div>
+          <h3>Built and tested on all three</h3>
+          <p>Every release is built and checked by automated pipelines on macOS, Windows and Linux before it reaches you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>© 2026 Keel Labs</span>
+    <span><a href="https://keel.keellabs.dev">Keel</a> · <a href="https://daukey.keellabs.dev" hreflang="vi">DauKey</a> · <a href="https://github.com/keel-app">GitHub</a></span>
+  </div>
+</footer>
+
+<script>
+  // Current versions, from each app's own release feed.
+  fetch("https://api.github.com/repos/keel-app/keel-dev/releases/latest").then((r) => r.ok && r.json())
+    .then((r) => { if (r) document.querySelector("[data-keel-version]").textContent = r.tag_name; }).catch(() => {});
+  fetch("https://daukey.keellabs.dev/version.json").then((r) => r.ok && r.json())
+    .then((v) => { if (v) document.querySelector("[data-daukey-version]").textContent = v.released === false ? `v${v.version} coming soon` : `v${v.version}`; }).catch(() => {});
+</script>
+</body>
+</html>

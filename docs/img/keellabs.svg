@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#14172A"/>
+  <!-- hull seen from the side: deck (DauKey orange), hull, keel (Keel blue) -->
+  <path d="M10 25h44c-2.5 8-9 13-17 13H27c-8 0-14.5-5-17-13z" fill="#FFFFFF"/>
+  <rect x="9" y="21" width="46" height="4" rx="2" fill="#FF5C38"/>
+  <path d="M29 37.5h6l-1.6 15.5h-2.8z" fill="#4D8EFF"/>
+</svg>
