@@ -1,27 +1,30 @@
-/* keellabs.dev - neutral ink with each app's own accent: DauKey orange, Keel blue. */
+/* keellabs.dev - Keel Labs navy and teal; each app keeps its own accent: DauKey orange, Keel blue. */
 
 :root {
-  --page: #f6f5f1;
+  --page: #f6f8fa;
   --raised: #ffffff;
-  --alt: #efeee9;
-  --ink: #14172a;
-  --muted: #4a4e62;
-  --line: #e1e3ee;
+  --alt: #eef2f5;
+  --ink: #0a1b2e;          /* Keel Labs navy */
+  --muted: #4a5a6b;
+  --line: #e3e8ee;
+  --brand: #16707f;        /* Keel Labs teal for text and lines on light */
   --daukey: #c13416;       /* DauKey accent-text */
   --daukey-fill: #ff5c38;
   --keel: #005ac2;         /* Keel blue for text on light */
   --keel-fill: #2f6fe0;
-  --shadow: 0 1px 2px rgb(20 23 42 / 0.05), 0 14px 36px rgb(20 23 42 / 0.07);
+  --shadow: 0 1px 2px rgb(10 27 46 / 0.05), 0 14px 36px rgb(10 27 46 / 0.07);
+  --display: "Space Grotesk", Inter, ui-sans-serif, system-ui, sans-serif;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --page: #0e1020;
-    --raised: #161a2e;
-    --alt: #121527;
-    --ink: #f1f2f7;
-    --muted: #9aa0bc;
-    --line: #2a2f47;
+    --page: #0a1b2e;
+    --raised: #11243a;
+    --alt: #0e2034;
+    --ink: #f1f5f8;
+    --muted: #9fb0c0;
+    --line: #1f3550;
+    --brand: #5fd3e3;
     --daukey: #ff7a5a;
     --keel: #7aa9ff;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 16px 40px rgb(0 0 0 / 0.35);
@@ -35,7 +38,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--keel-fill); outline-offset: 2px; border-radius: 6px; }
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 6px; }
 code { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: 0.86em; background: var(--alt); border: 1px solid var(--line); padding: 0.05em 0.35em; border-radius: 5px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
@@ -43,14 +46,18 @@ code { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: 0.8
 
 .top { border-bottom: 1px solid var(--line); }
 .top-row { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 19px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--display); font-size: 22px; letter-spacing: -0.03em; }
+.brand img { border-radius: 24%; box-shadow: 0 0 0 1px var(--line); } /* the navy tile needs an edge on the navy dark page */
+.brand b { font-weight: 700; }
+.brand span span { font-weight: 400; color: var(--brand); }
 nav { display: flex; gap: 4px; }
 nav a { color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 8px; font-size: 15px; font-weight: 500; }
 nav a:hover { color: var(--ink); background: var(--alt); }
 
 .hero { padding: 96px 0 56px; }
-.eyebrow { margin: 0 0 14px; color: var(--muted); font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
-h1 { margin: 0; max-width: 15em; font-size: clamp(38px, 5.6vw, 64px); line-height: 1.06; letter-spacing: -0.035em; font-weight: 800; }
+.eyebrow { margin: 0 0 14px; color: var(--brand); font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+h1, h2, h3 { font-family: var(--display); }
+h1 { margin: 0; max-width: 15em; font-size: clamp(38px, 5.6vw, 64px); line-height: 1.06; letter-spacing: -0.035em; font-weight: 700; }
 .lead { max-width: 36em; margin: 24px 0 0; font-size: 20px; color: var(--muted); }
 
 .section { padding: 40px 0 88px; }
