@@ -41,7 +41,6 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Keel Labs</p>
       <h1>Small, sturdy apps for the work you do every day.</h1>
       <p class="lead">A keel keeps a boat steady and on course. That is the job of our apps too:
         focused tools for your computer, phone and tablet that do one thing well and stay out of your way.</p>
@@ -65,7 +64,7 @@
             <li>Local sites with HTTPS on <code>.test</code>, tunnels to share them, Mailpit for dev mail</li>
             <li>Everything in its own folder: uninstall and your system is untouched</li>
           </ul>
-          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-keel-version>v1.0.2</span></p>
+          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-keel-version hidden></span></p>
           <a class="button" href="https://keel.keellabs.dev">Visit Keel</a>
         </article>
 
@@ -82,7 +81,7 @@
             <li>Leaves English words alone, expands shortcuts like <code>vn</code> → Việt Nam</li>
             <li>Ctrl+Shift switches Vietnamese/English without taking over your apps' shortcuts</li>
           </ul>
-          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-daukey-version>v1.0.0</span></p>
+          <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-daukey-version hidden></span></p>
           <a class="button" href="https://daukey.keellabs.dev" hreflang="vi">Visit DauKey <small>(in Vietnamese)</small></a>
         </article>
         <article class="app brushwick">
@@ -138,11 +137,17 @@
 </footer>
 
 <script>
-  // Current versions, from each app's own release feed.
+  // Current versions, from each app's own release feed. A badge stays hidden until its feed answers,
+  // so a failed request never leaves an old number on the page.
+  function showVersion(selector, text) {
+    const el = document.querySelector(selector);
+    el.textContent = text;
+    el.hidden = false;
+  }
   fetch("https://api.github.com/repos/keel-app/keel-dev/releases/latest").then((r) => r.ok && r.json())
-    .then((r) => { if (r) document.querySelector("[data-keel-version]").textContent = r.tag_name; }).catch(() => {});
+    .then((r) => { if (r) showVersion("[data-keel-version]", r.tag_name); }).catch(() => {});
   fetch("https://daukey.keellabs.dev/version.json").then((r) => r.ok && r.json())
-    .then((v) => { if (v) document.querySelector("[data-daukey-version]").textContent = v.released === false ? `v${v.version} coming soon` : `v${v.version}`; }).catch(() => {});
+    .then((v) => { if (v) showVersion("[data-daukey-version]", v.released === false ? `v${v.version} coming soon` : `v${v.version}`); }).catch(() => {});
 </script>
 </body>
 </html>
