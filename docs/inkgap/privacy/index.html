@@ -156,9 +156,10 @@ const GOOGLE = 'https://policies.google.com/technologies/partner-sites';
 const T = {
   en: {
     name: 'English', lang: 'Language', title: 'Privacy Policy', updated: 'Last updated {date}',
-    intro: 'Inkgap is a puzzle game by Keel Labs. This policy explains what information the app handles and why. In short: there is no account, we run no servers, and your progress stays on your device. The app shows ads from Google AdMob, and Google collects some data to deliver them.',
+    intro: 'Inkgap is a puzzle game by Keel Labs. This policy explains what information the app handles and why. In short: there is no account, and your progress stays on your device. The app shows ads from Google AdMob, and Google collects some data to deliver them.',
     s: [
       ['What stays on your device', 'The app saves which levels you have solved and whether sound and vibration are on. This is stored only on your device, is never sent to us, and is deleted when you uninstall the app.'],
+      ['New levels', 'To add new levels without an app update, the app downloads a small level file and its digital signature from keellabs.dev when it starts, and keeps a copy on your device. The request contains no account, advertising ID or game data. As with any web server, our hosting provider may keep standard technical logs (such as IP address, time and user agent) for security and operations. The file is checked against its signature before it is used.'],
       ['What we don’t collect', 'We don’t ask for your name, email, contacts, photos or precise location. The app has no sign-in and no analytics of its own, and we never sell data.'],
       ['Advertising', 'To keep the game free, the app shows ads through Google AdMob: an optional video you can watch to get a hint, and occasional full-screen ads between levels. To show and measure these ads, Google may collect:',
         ['your device’s advertising identifier;', 'your IP address and the approximate location derived from it;', 'device model, operating system and app version;', 'how you interact with ads, and diagnostic data such as crashes.'],
@@ -171,9 +172,10 @@ const T = {
   },
   vi: {
     name: 'Tiếng Việt', lang: 'Ngôn ngữ', title: 'Chính sách quyền riêng tư', updated: 'Cập nhật lần cuối {date}',
-    intro: 'Inkgap là trò chơi giải đố của Keel Labs. Chính sách này giải thích app xử lý những thông tin nào và vì sao. Nói ngắn gọn: không cần tài khoản, chúng tôi không có máy chủ nào, và tiến độ chơi của bạn chỉ nằm trên máy. App hiển thị quảng cáo của Google AdMob, và Google thu thập một số dữ liệu để phân phối quảng cáo.',
+    intro: 'Inkgap là trò chơi giải đố của Keel Labs. Chính sách này giải thích app xử lý những thông tin nào và vì sao. Nói ngắn gọn: không cần tài khoản, và tiến độ chơi của bạn chỉ nằm trên máy. App hiển thị quảng cáo của Google AdMob, và Google thu thập một số dữ liệu để phân phối quảng cáo.',
     s: [
       ['Dữ liệu nằm trên máy bạn', 'App lưu những màn bạn đã giải và việc bạn bật hay tắt âm thanh, rung. Các thông tin này chỉ lưu trên máy, không bao giờ gửi cho chúng tôi, và bị xóa khi bạn gỡ app.'],
+      ['Màn chơi mới', 'Để thêm màn chơi mới mà không cần cập nhật app, mỗi lần khởi động app tải một tệp màn chơi nhỏ cùng chữ ký số của tệp từ keellabs.dev và giữ một bản sao trên máy bạn. Yêu cầu này không chứa tài khoản, mã định danh quảng cáo hay dữ liệu chơi. Cũng như mọi máy chủ web, nhà cung cấp dịch vụ lưu trữ có thể giữ nhật ký kỹ thuật thông thường (như địa chỉ IP, thời gian, user agent) để bảo mật và vận hành. Tệp được đối chiếu với chữ ký trước khi sử dụng.'],
       ['Những gì chúng tôi không thu thập', 'Chúng tôi không hỏi tên, email, danh bạ, ảnh hay vị trí chính xác của bạn. App không có đăng nhập, không có công cụ phân tích riêng, và chúng tôi không bao giờ bán dữ liệu.'],
       ['Quảng cáo', 'Để trò chơi miễn phí, app hiển thị quảng cáo qua Google AdMob: video tùy chọn mà bạn có thể xem để nhận gợi ý, và thỉnh thoảng một quảng cáo toàn màn hình giữa các màn. Để hiển thị và đo lường quảng cáo, Google có thể thu thập:',
         ['mã định danh quảng cáo của thiết bị;', 'địa chỉ IP và vị trí gần đúng suy ra từ địa chỉ đó;', 'dòng máy, hệ điều hành và phiên bản app;', 'cách bạn tương tác với quảng cáo, cùng dữ liệu chẩn đoán như lỗi văng app.'],
@@ -186,9 +188,10 @@ const T = {
   },
   es: {
     name: 'Español', lang: 'Idioma', title: 'Política de privacidad', updated: 'Última actualización: {date}',
-    intro: 'Inkgap es un juego de rompecabezas de Keel Labs. Esta política explica qué información trata la app y por qué. En resumen: no hay cuenta, no tenemos servidores y tu progreso se queda en tu dispositivo. La app muestra anuncios de Google AdMob, y Google recopila algunos datos para ofrecerlos.',
+    intro: 'Inkgap es un juego de rompecabezas de Keel Labs. Esta política explica qué información trata la app y por qué. En resumen: no hay cuenta y tu progreso se queda en tu dispositivo. La app muestra anuncios de Google AdMob, y Google recopila algunos datos para ofrecerlos.',
     s: [
       ['Lo que se queda en tu dispositivo', 'La app guarda qué niveles has resuelto y si el sonido y la vibración están activados. Esto se almacena solo en tu dispositivo, nunca se nos envía y se borra al desinstalar la app.'],
+      ['Niveles nuevos', 'Para añadir niveles nuevos sin actualizar la app, al iniciarse descarga de keellabs.dev un pequeño archivo de niveles y su firma digital, y guarda una copia en tu dispositivo. La solicitud no contiene cuenta, identificador de publicidad ni datos de juego. Como en cualquier servidor web, nuestro proveedor de alojamiento puede conservar registros técnicos habituales (como la dirección IP, la hora y el agente de usuario) por seguridad y operación. El archivo se comprueba con su firma antes de usarse.'],
       ['Lo que no recopilamos', 'No pedimos tu nombre, correo, contactos, fotos ni ubicación precisa. La app no tiene inicio de sesión ni analíticas propias, y nunca vendemos datos.'],
       ['Publicidad', 'Para que el juego sea gratuito, la app muestra anuncios a través de Google AdMob: un vídeo opcional que puedes ver para obtener una pista y, de vez en cuando, anuncios a pantalla completa entre niveles. Para mostrar y medir estos anuncios, Google puede recopilar:',
         ['el identificador de publicidad de tu dispositivo;', 'tu dirección IP y la ubicación aproximada que se deduce de ella;', 'el modelo del dispositivo, el sistema operativo y la versión de la app;', 'cómo interactúas con los anuncios y datos de diagnóstico, como los cierres inesperados.'],
@@ -201,9 +204,10 @@ const T = {
   },
   pt: {
     name: 'Português', lang: 'Idioma', title: 'Política de Privacidade', updated: 'Última atualização: {date}',
-    intro: 'Inkgap é um jogo de quebra-cabeça da Keel Labs. Esta política explica quais informações o app trata e por quê. Resumindo: não há conta, não temos servidores e seu progresso fica no seu aparelho. O app exibe anúncios do Google AdMob, e o Google coleta alguns dados para entregá-los.',
+    intro: 'Inkgap é um jogo de quebra-cabeça da Keel Labs. Esta política explica quais informações o app trata e por quê. Resumindo: não há conta e seu progresso fica no seu aparelho. O app exibe anúncios do Google AdMob, e o Google coleta alguns dados para entregá-los.',
     s: [
       ['O que fica no seu aparelho', 'O app salva quais fases você já resolveu e se o som e a vibração estão ligados. Isso fica armazenado só no seu aparelho, nunca é enviado para nós e é apagado quando você desinstala o app.'],
+      ['Novos níveis', 'Para adicionar novos níveis sem atualizar o app, ao iniciar ele baixa de keellabs.dev um pequeno arquivo de níveis e sua assinatura digital, e guarda uma cópia no seu aparelho. A solicitação não contém conta, identificador de publicidade nem dados de jogo. Como em qualquer servidor web, nosso provedor de hospedagem pode manter registros técnicos comuns (como endereço IP, horário e user agent) por segurança e operação. O arquivo é verificado com a assinatura antes de ser usado.'],
       ['O que não coletamos', 'Não pedimos seu nome, e-mail, contatos, fotos nem localização precisa. O app não tem login nem análises próprias, e nunca vendemos dados.'],
       ['Publicidade', 'Para manter o jogo gratuito, o app exibe anúncios pelo Google AdMob: um vídeo opcional que você pode assistir para ganhar uma dica e, de vez em quando, anúncios em tela cheia entre as fases. Para exibir e medir esses anúncios, o Google pode coletar:',
         ['o identificador de publicidade do seu aparelho;', 'seu endereço IP e a localização aproximada obtida a partir dele;', 'modelo do aparelho, sistema operacional e versão do app;', 'como você interage com os anúncios e dados de diagnóstico, como travamentos.'],
@@ -216,9 +220,10 @@ const T = {
   },
   fr: {
     name: 'Français', lang: 'Langue', title: 'Politique de confidentialité', updated: 'Dernière mise à jour : {date}',
-    intro: 'Inkgap est un jeu de réflexion conçu par Keel Labs. Cette politique explique quelles informations l’application traite et pourquoi. En bref : pas de compte, aucun serveur de notre côté, et votre progression reste sur votre appareil. L’application affiche des publicités Google AdMob, et Google collecte certaines données pour les diffuser.',
+    intro: 'Inkgap est un jeu de réflexion conçu par Keel Labs. Cette politique explique quelles informations l’application traite et pourquoi. En bref : pas de compte, et votre progression reste sur votre appareil. L’application affiche des publicités Google AdMob, et Google collecte certaines données pour les diffuser.',
     s: [
       ['Ce qui reste sur votre appareil', 'L’application enregistre les niveaux que vous avez résolus et l’activation du son et des vibrations. Ces données restent uniquement sur votre appareil, ne nous sont jamais envoyées et sont effacées lorsque vous désinstallez l’application.'],
+      ['Nouveaux niveaux', 'Pour ajouter de nouveaux niveaux sans mettre à jour l’application, celle-ci télécharge au démarrage un petit fichier de niveaux et sa signature numérique depuis keellabs.dev, et en garde une copie sur votre appareil. La requête ne contient ni compte, ni identifiant publicitaire, ni données de jeu. Comme tout serveur web, notre hébergeur peut conserver des journaux techniques habituels (adresse IP, heure, user agent) pour la sécurité et l’exploitation. Le fichier est vérifié avec sa signature avant d’être utilisé.'],
       ['Ce que nous ne collectons pas', 'Nous ne demandons ni votre nom, ni votre e-mail, ni vos contacts, ni vos photos, ni votre position précise. L’application n’a ni connexion ni outil d’analyse propre, et nous ne vendons jamais de données.'],
       ['Publicité', 'Pour que le jeu reste gratuit, l’application affiche des publicités via Google AdMob : une vidéo facultative à regarder pour obtenir un indice, et de temps en temps une publicité plein écran entre deux niveaux. Pour afficher et mesurer ces publicités, Google peut collecter :',
         ['l’identifiant publicitaire de votre appareil ;', 'votre adresse IP et la localisation approximative qui en découle ;', 'le modèle de l’appareil, le système d’exploitation et la version de l’application ;', 'vos interactions avec les publicités et des données de diagnostic, comme les plantages.'],
@@ -231,9 +236,10 @@ const T = {
   },
   de: {
     name: 'Deutsch', lang: 'Sprache', title: 'Datenschutzerklärung', updated: 'Zuletzt aktualisiert: {date}',
-    intro: 'Inkgap ist ein Rätselspiel von Keel Labs. Diese Erklärung beschreibt, welche Daten die App verarbeitet und warum. Kurz gesagt: Es gibt kein Konto, wir betreiben keine Server, und dein Spielfortschritt bleibt auf deinem Gerät. Die App zeigt Werbung über Google AdMob, und Google erhebt dafür einige Daten.',
+    intro: 'Inkgap ist ein Rätselspiel von Keel Labs. Diese Erklärung beschreibt, welche Daten die App verarbeitet und warum. Kurz gesagt: Es gibt kein Konto, und dein Spielfortschritt bleibt auf deinem Gerät. Die App zeigt Werbung über Google AdMob, und Google erhebt dafür einige Daten.',
     s: [
       ['Was auf deinem Gerät bleibt', 'Die App speichert, welche Level du gelöst hast und ob Ton und Vibration eingeschaltet sind. Diese Daten liegen nur auf deinem Gerät, werden nie an uns gesendet und beim Deinstallieren der App gelöscht.'],
+      ['Neue Level', 'Um neue Level ohne App-Update anzubieten, lädt die App beim Start eine kleine Leveldatei samt digitaler Signatur von keellabs.dev herunter und behält eine Kopie auf deinem Gerät. Die Anfrage enthält kein Konto, keine Werbe-ID und keine Spieldaten. Wie bei jedem Webserver kann unser Hosting-Anbieter übliche technische Protokolle (etwa IP-Adresse, Zeit und User-Agent) für Sicherheit und Betrieb speichern. Die Datei wird vor der Verwendung anhand ihrer Signatur geprüft.'],
       ['Was wir nicht erheben', 'Wir fragen nicht nach deinem Namen, deiner E-Mail-Adresse, deinen Kontakten, Fotos oder deinem genauen Standort. Die App hat keine Anmeldung und keine eigene Analyse, und wir verkaufen niemals Daten.'],
       ['Werbung', 'Damit das Spiel kostenlos bleibt, zeigt die App Werbung über Google AdMob: ein freiwilliges Video, das du für einen Tipp ansehen kannst, und gelegentlich eine Vollbildanzeige zwischen den Leveln. Um diese Anzeigen auszuliefern und zu messen, kann Google Folgendes erheben:',
         ['die Werbe-ID deines Geräts;', 'deine IP-Adresse und den daraus abgeleiteten ungefähren Standort;', 'Gerätemodell, Betriebssystem und App-Version;', 'wie du mit Anzeigen interagierst, sowie Diagnosedaten wie Abstürze.'],
@@ -246,9 +252,10 @@ const T = {
   },
   it: {
     name: 'Italiano', lang: 'Lingua', title: 'Informativa sulla privacy', updated: 'Ultimo aggiornamento: {date}',
-    intro: 'Inkgap è un gioco di rompicapi di Keel Labs. Questa informativa spiega quali informazioni tratta l’app e perché. In breve: non serve un account, non abbiamo server e i tuoi progressi restano sul tuo dispositivo. L’app mostra annunci di Google AdMob, e Google raccoglie alcuni dati per pubblicarli.',
+    intro: 'Inkgap è un gioco di rompicapi di Keel Labs. Questa informativa spiega quali informazioni tratta l’app e perché. In breve: non serve un account e i tuoi progressi restano sul tuo dispositivo. L’app mostra annunci di Google AdMob, e Google raccoglie alcuni dati per pubblicarli.',
     s: [
       ['Cosa resta sul tuo dispositivo', 'L’app salva i livelli che hai risolto e se audio e vibrazione sono attivi. Questi dati restano solo sul tuo dispositivo, non ci vengono mai inviati e vengono cancellati quando disinstalli l’app.'],
+      ['Nuovi livelli', 'Per aggiungere nuovi livelli senza aggiornare l’app, all’avvio l’app scarica da keellabs.dev un piccolo file di livelli con la sua firma digitale e ne conserva una copia sul tuo dispositivo. La richiesta non contiene account, identificativo pubblicitario né dati di gioco. Come per qualsiasi server web, il nostro fornitore di hosting può conservare i normali registri tecnici (come indirizzo IP, ora e user agent) per sicurezza e operatività. Il file viene verificato con la sua firma prima dell’uso.'],
       ['Cosa non raccogliamo', 'Non chiediamo nome, e-mail, contatti, foto né posizione precisa. L’app non ha accesso con account né strumenti di analisi propri, e non vendiamo mai dati.'],
       ['Pubblicità', 'Per mantenere il gioco gratuito, l’app mostra annunci tramite Google AdMob: un video facoltativo da guardare per ottenere un suggerimento e, di tanto in tanto, annunci a schermo intero tra un livello e l’altro. Per mostrare e misurare questi annunci, Google può raccogliere:',
         ['l’identificatore pubblicitario del dispositivo;', 'l’indirizzo IP e la posizione approssimativa ricavata da esso;', 'modello del dispositivo, sistema operativo e versione dell’app;', 'come interagisci con gli annunci e dati diagnostici, come gli arresti anomali.'],
@@ -261,9 +268,10 @@ const T = {
   },
   ru: {
     name: 'Русский', lang: 'Язык', title: 'Политика конфиденциальности', updated: 'Последнее обновление: {date}',
-    intro: 'Inkgap — игра-головоломка от Keel Labs. Здесь объясняется, какие данные обрабатывает приложение и зачем. Коротко: учётная запись не нужна, своих серверов у нас нет, а ваш прогресс хранится только на устройстве. В приложении показывается реклама Google AdMob, и для её показа Google собирает некоторые данные.',
+    intro: 'Inkgap — игра-головоломка от Keel Labs. Здесь объясняется, какие данные обрабатывает приложение и зачем. Коротко: учётная запись не нужна, а ваш прогресс хранится только на устройстве. В приложении показывается реклама Google AdMob, и для её показа Google собирает некоторые данные.',
     s: [
       ['Что остаётся на устройстве', 'Приложение сохраняет, какие уровни вы прошли и включены ли звук и вибрация. Эти данные хранятся только на вашем устройстве, никогда не отправляются нам и удаляются вместе с приложением.'],
+      ['Новые уровни', 'Чтобы добавлять новые уровни без обновления приложения, при запуске оно скачивает с keellabs.dev небольшой файл уровней и его цифровую подпись и сохраняет копию на вашем устройстве. Запрос не содержит учётной записи, рекламного идентификатора или игровых данных. Как и любой веб-сервер, наш хостинг-провайдер может вести стандартные технические журналы (например, IP-адрес, время и user agent) для безопасности и работы сервиса. Перед использованием файл проверяется по подписи.'],
       ['Чего мы не собираем', 'Мы не запрашиваем имя, электронную почту, контакты, фотографии или точное местоположение. В приложении нет входа в аккаунт и собственной аналитики, и мы никогда не продаём данные.'],
       ['Реклама', 'Чтобы игра оставалась бесплатной, приложение показывает рекламу через Google AdMob: необязательное видео, которое можно посмотреть ради подсказки, и иногда полноэкранную рекламу между уровнями. Для показа и оценки рекламы Google может собирать:',
         ['рекламный идентификатор устройства;', 'IP-адрес и примерное местоположение, определённое по нему;', 'модель устройства, операционную систему и версию приложения;', 'данные о взаимодействии с рекламой и диагностические данные, например о сбоях.'],
@@ -276,9 +284,10 @@ const T = {
   },
   ja: {
     name: '日本語', lang: '言語', title: 'プライバシーポリシー', updated: '最終更新日：{date}',
-    intro: 'Inkgap は Keel Labs が制作したパズルゲームです。このポリシーでは、アプリが扱う情報とその理由を説明します。要点は次のとおりです。アカウントは不要で、私たちはサーバーを運用しておらず、プレイの進行状況は端末内にのみ保存されます。アプリには Google AdMob の広告が表示され、広告配信のために Google が一部のデータを収集します。',
+    intro: 'Inkgap は Keel Labs が制作したパズルゲームです。このポリシーでは、アプリが扱う情報とその理由を説明します。要点は次のとおりです。アカウントは不要で、プレイの進行状況は端末内にのみ保存されます。アプリには Google AdMob の広告が表示され、広告配信のために Google が一部のデータを収集します。',
     s: [
       ['端末に保存される情報', 'アプリは、クリアしたステージと、サウンド・バイブレーションのオン／オフを保存します。これらは端末内にのみ保存され、私たちに送信されることはなく、アプリを削除すると消去されます。'],
+      ['新しいステージ', 'アプリの更新なしで新しいステージを追加するため、起動時に keellabs.dev から小さなステージファイルとそのデジタル署名をダウンロードし、端末にコピーを保存します。リクエストにアカウント、広告ID、ゲームデータは含まれません。一般的なウェブサーバーと同様に、ホスティング事業者がセキュリティと運用のために標準的な技術ログ（IPアドレス、時刻、ユーザーエージェントなど）を保持することがあります。ファイルは使用前に署名で検証されます。'],
       ['収集しない情報', 'お名前、メールアドレス、連絡先、写真、正確な位置情報をお尋ねすることはありません。アプリにはログイン機能も独自の分析機能もなく、データを販売することも一切ありません。'],
       ['広告', 'ゲームを無料で提供するため、アプリは Google AdMob を通じて広告を表示します。ヒントを得るために任意で視聴できる動画広告と、ステージの合間にときどき表示される全画面広告です。広告の表示と効果測定のため、Google は次の情報を収集することがあります。',
         ['端末の広告 ID', 'IP アドレスと、そこから推定されるおおよその位置情報', '端末の機種、OS、アプリのバージョン', '広告の操作状況、およびクラッシュなどの診断データ'],
@@ -291,9 +300,10 @@ const T = {
   },
   ko: {
     name: '한국어', lang: '언어', title: '개인정보 처리방침', updated: '최종 업데이트: {date}',
-    intro: 'Inkgap은 Keel Labs가 만든 퍼즐 게임입니다. 이 방침은 앱이 어떤 정보를 다루며 그 이유가 무엇인지 설명합니다. 요약하면, 계정이 필요 없고 저희는 서버를 운영하지 않으며 게임 진행 상황은 기기에만 저장됩니다. 앱에는 Google AdMob 광고가 표시되며, Google은 광고 제공을 위해 일부 데이터를 수집합니다.',
+    intro: 'Inkgap은 Keel Labs가 만든 퍼즐 게임입니다. 이 방침은 앱이 어떤 정보를 다루며 그 이유가 무엇인지 설명합니다. 요약하면, 계정이 필요 없고 게임 진행 상황은 기기에만 저장됩니다. 앱에는 Google AdMob 광고가 표시되며, Google은 광고 제공을 위해 일부 데이터를 수집합니다.',
     s: [
       ['기기에만 저장되는 정보', '앱은 클리어한 스테이지와 소리·진동 설정을 저장합니다. 이 정보는 기기에만 저장되고 저희에게 전송되지 않으며, 앱을 삭제하면 함께 지워집니다.'],
+      ['새 스테이지', '앱 업데이트 없이 새 스테이지를 추가하기 위해, 앱은 시작할 때 keellabs.dev에서 작은 스테이지 파일과 디지털 서명을 내려받고 사본을 기기에 보관합니다. 이 요청에는 계정, 광고 ID, 게임 데이터가 포함되지 않습니다. 일반 웹 서버와 마찬가지로 호스팅 업체가 보안과 운영을 위해 IP 주소, 시간, 사용자 에이전트 같은 표준 기술 로그를 보관할 수 있습니다. 파일은 사용하기 전에 서명으로 검증됩니다.'],
       ['수집하지 않는 정보', '이름, 이메일, 연락처, 사진, 정확한 위치를 요청하지 않습니다. 앱에는 로그인 기능이나 자체 분석 도구가 없으며, 저희는 어떤 데이터도 판매하지 않습니다.'],
       ['광고', '게임을 무료로 제공하기 위해 앱은 Google AdMob을 통해 광고를 표시합니다. 힌트를 얻기 위해 선택적으로 시청하는 동영상 광고와, 스테이지 사이에 가끔 나오는 전면 광고입니다. 광고를 표시하고 성과를 측정하기 위해 Google은 다음 정보를 수집할 수 있습니다.',
         ['기기의 광고 식별자', 'IP 주소 및 이를 통해 추정한 대략적인 위치', '기기 모델, 운영체제, 앱 버전', '광고와의 상호작용 및 비정상 종료 같은 진단 데이터'],
@@ -306,9 +316,10 @@ const T = {
   },
   zh: {
     name: '简体中文', lang: '语言', title: '隐私政策', updated: '最后更新：{date}',
-    intro: 'Inkgap 是 Keel Labs 出品的一款解谜游戏。本政策说明应用会处理哪些信息以及原因。简而言之：无需注册账号，我们不运营任何服务器，你的游戏进度只保存在设备上。应用会展示 Google AdMob 广告，Google 会为此收集部分数据。',
+    intro: 'Inkgap 是 Keel Labs 出品的一款解谜游戏。本政策说明应用会处理哪些信息以及原因。简而言之：无需注册账号，你的游戏进度只保存在设备上。应用会展示 Google AdMob 广告，Google 会为此收集部分数据。',
     s: [
       ['保存在设备上的信息', '应用会保存你已通过的关卡，以及声音和振动是否开启。这些信息只保存在你的设备上，绝不会发送给我们，卸载应用后即被删除。'],
+      ['新关卡', '为了无需更新应用即可添加新关卡，应用在启动时会从 keellabs.dev 下载一个小的关卡文件及其数字签名，并在你的设备上保留一份副本。该请求不包含账号、广告标识符或游戏数据。与任何网络服务器一样，我们的托管服务商可能出于安全和运营目的保留常规技术日志（如 IP 地址、时间和用户代理）。文件在使用前会先用签名校验。'],
       ['我们不收集的信息', '我们不会询问你的姓名、电子邮箱、通讯录、照片或精确位置。应用没有登录功能，也没有自有的统计分析，我们从不出售任何数据。'],
       ['广告', '为了让游戏保持免费，应用通过 Google AdMob 展示广告：一种是你可以自愿观看以获取提示的视频广告，另一种是关卡之间偶尔出现的全屏广告。为了展示和衡量这些广告，Google 可能会收集：',
         ['设备的广告标识符；', 'IP 地址以及据此推断的大致位置；', '设备型号、操作系统和应用版本；', '你与广告的互动情况，以及崩溃等诊断数据。'],
@@ -321,9 +332,10 @@ const T = {
   },
   'zh-Hant': {
     name: '繁體中文', lang: '語言', title: '隱私權政策', updated: '最後更新：{date}',
-    intro: 'Inkgap 是 Keel Labs 推出的一款解謎遊戲。本政策說明應用程式會處理哪些資訊以及原因。簡單來說：不需要帳號，我們不經營任何伺服器，你的遊戲進度只儲存在裝置上。應用程式會顯示 Google AdMob 廣告，Google 會為此收集部分資料。',
+    intro: 'Inkgap 是 Keel Labs 推出的一款解謎遊戲。本政策說明應用程式會處理哪些資訊以及原因。簡單來說：不需要帳號，你的遊戲進度只儲存在裝置上。應用程式會顯示 Google AdMob 廣告，Google 會為此收集部分資料。',
     s: [
       ['儲存在裝置上的資訊', '應用程式會儲存你已破解的關卡，以及音效和震動是否開啟。這些資訊只儲存在你的裝置上，絕不會傳送給我們，移除應用程式後即會刪除。'],
+      ['新關卡', '為了無須更新應用程式即可新增關卡，應用程式在啟動時會從 keellabs.dev 下載一個小的關卡檔案及其數位簽章，並在你的裝置上保留一份副本。該請求不包含帳號、廣告識別碼或遊戲資料。與任何網路伺服器一樣，我們的代管服務供應商可能基於安全與營運目的保留一般技術記錄（如 IP 位址、時間與使用者代理）。檔案在使用前會先以簽章驗證。'],
       ['我們不收集的資訊', '我們不會詢問你的姓名、電子郵件、聯絡人、相片或精確位置。應用程式沒有登入功能，也沒有自己的數據分析，我們絕不出售任何資料。'],
       ['廣告', '為了讓遊戲維持免費，應用程式透過 Google AdMob 顯示廣告：一種是你可以自行選擇觀看以取得提示的影片廣告，另一種是關卡之間偶爾出現的全螢幕廣告。為了顯示及評估這些廣告，Google 可能會收集：',
         ['裝置的廣告識別碼；', 'IP 位址以及據此推估的大略位置；', '裝置型號、作業系統和應用程式版本；', '你與廣告的互動情形，以及當機等診斷資料。'],
@@ -336,9 +348,10 @@ const T = {
   },
   id: {
     name: 'Bahasa Indonesia', lang: 'Bahasa', title: 'Kebijakan Privasi', updated: 'Terakhir diperbarui {date}',
-    intro: 'Inkgap adalah game teka-teki buatan Keel Labs. Kebijakan ini menjelaskan informasi apa saja yang ditangani aplikasi dan alasannya. Singkatnya: tidak perlu akun, kami tidak menjalankan server apa pun, dan progres permainanmu tetap tersimpan di perangkat. Aplikasi menampilkan iklan dari Google AdMob, dan Google mengumpulkan sebagian data untuk menayangkannya.',
+    intro: 'Inkgap adalah game teka-teki buatan Keel Labs. Kebijakan ini menjelaskan informasi apa saja yang ditangani aplikasi dan alasannya. Singkatnya: tidak perlu akun, dan progres permainanmu tetap tersimpan di perangkat. Aplikasi menampilkan iklan dari Google AdMob, dan Google mengumpulkan sebagian data untuk menayangkannya.',
     s: [
       ['Yang tersimpan di perangkatmu', 'Aplikasi menyimpan level yang sudah kamu selesaikan serta apakah suara dan getaran sedang aktif. Data ini hanya tersimpan di perangkatmu, tidak pernah dikirim ke kami, dan terhapus saat aplikasi dicopot.'],
+      ['Level baru', 'Untuk menambah level baru tanpa memperbarui aplikasi, saat dibuka aplikasi mengunduh berkas level kecil beserta tanda tangan digitalnya dari keellabs.dev, lalu menyimpan salinannya di perangkatmu. Permintaan itu tidak berisi akun, ID iklan, atau data permainan. Seperti server web pada umumnya, penyedia hosting kami dapat menyimpan log teknis standar (seperti alamat IP, waktu, dan user agent) untuk keamanan dan operasional. Berkas diperiksa dengan tanda tangannya sebelum dipakai.'],
       ['Yang tidak kami kumpulkan', 'Kami tidak meminta nama, email, kontak, foto, atau lokasi persismu. Aplikasi tidak memiliki fitur masuk akun maupun analitik sendiri, dan kami tidak pernah menjual data.'],
       ['Iklan', 'Agar game tetap gratis, aplikasi menampilkan iklan melalui Google AdMob: video opsional yang bisa kamu tonton untuk mendapat petunjuk, dan sesekali iklan layar penuh di antara level. Untuk menampilkan dan mengukur iklan tersebut, Google dapat mengumpulkan:',
         ['ID iklan perangkatmu;', 'alamat IP dan perkiraan lokasi yang diperoleh darinya;', 'model perangkat, sistem operasi, dan versi aplikasi;', 'interaksimu dengan iklan, serta data diagnostik seperti aplikasi yang tiba-tiba tertutup.'],
