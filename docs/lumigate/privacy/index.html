@@ -265,7 +265,7 @@
       select.value = code;
     }
 
-    // Ưu tiên: lựa chọn trước đó → ?lang= → ngôn ngữ trình duyệt/hệ thống → tiếng Anh.
+    // Ưu tiên: ?lang= (vd. link mở từ trong app) → lựa chọn đã lưu → ngôn ngữ trình duyệt/hệ thống → tiếng Anh.
     function pick(tag) {
       if (!tag) return null;
       tag = String(tag).toLowerCase();
@@ -278,7 +278,7 @@
     var query = null;
     try { query = new URLSearchParams(location.search).get('lang'); } catch (e) {}
     var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language]);
-    var start = pick(saved) || pick(query);
+    var start = pick(query) || pick(saved);
     for (var i = 0; !start && i < prefs.length; i++) start = pick(prefs[i]);
     apply(start || 'en');
 
