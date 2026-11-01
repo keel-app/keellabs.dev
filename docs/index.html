@@ -23,8 +23,8 @@
 <link rel="icon" href="img/keellabs-64.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -47,10 +47,11 @@
     </div>
   </section>
 
-  <section id="apps" class="section">
+  <svg class="waterline" viewBox="0 0 1440 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22C120 4 240 40 360 22S600 4 720 22s240 18 360 0 240-18 360 0V44H0z"/></svg>
+  <section id="apps" class="deep">
     <div class="wrap">
       <h2 class="visually-hidden">Apps</h2>
-      <div class="apps">
+      <div class="stations">
         <article class="app keel">
           <div class="app-head">
             <img src="img/keel.png" alt="" width="72" height="72">
@@ -59,6 +60,7 @@
               <p class="tagline">Your local dev stack, without Docker.</p>
             </div>
           </div>
+          <div class="app-body">
           <ul>
             <li>PHP, Node.js, Caddy, Nginx, Apache, MariaDB, PostgreSQL, Redis and more, installed natively in a click</li>
             <li>Local sites with HTTPS on <code>.test</code>, tunnels to share them, Mailpit for dev mail</li>
@@ -66,6 +68,7 @@
           </ul>
           <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-keel-version hidden></span></p>
           <a class="button" href="https://keel.keellabs.dev">Visit Keel</a>
+          </div>
         </article>
 
         <article class="app daukey">
@@ -76,6 +79,7 @@
               <p class="tagline">Vietnamese typing that works the same on every computer.</p>
             </div>
           </div>
+          <div class="app-body">
           <ul>
             <li>Telex, VNI and VIQR with one engine on macOS, Windows and Linux, so every machine types alike</li>
             <li>Leaves English words alone, expands shortcuts like <code>vn</code> → Việt Nam</li>
@@ -83,15 +87,17 @@
           </ul>
           <p class="facts"><span>macOS · Windows · Linux</span><span>Free</span><span data-daukey-version hidden></span></p>
           <a class="button" href="https://daukey.keellabs.dev" hreflang="vi">Visit DauKey <small>(in Vietnamese)</small></a>
+          </div>
         </article>
         <article class="app brushwick">
           <div class="app-head">
-            <img src="img/brushwick.png" alt="" width="72" height="72">
+            <img src="img/brushwick.svg" alt="" width="72" height="72">
             <div>
               <h3>Brushwick</h3>
               <p class="tagline">A drawing studio for iPad, iPhone and Android.</p>
             </div>
           </div>
+          <div class="app-body">
           <ul>
             <li>Brushes you tune in Brush Studio, layers with groups, clipping and masks, 12 color and effect adjustments</li>
             <li>Animation with onion skin, time-lapse video, export to layered PSD, PNG, TIFF and PDF</li>
@@ -99,12 +105,13 @@
           </ul>
           <p class="facts"><span>iPad · iPhone · Android</span><span>Free</span><span>Coming soon</span></p>
           <a class="button" href="https://brushwick.keellabs.dev/en/">Visit Brushwick</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="how" class="section alt">
+  <section id="how" class="how">
     <div class="wrap">
       <h2>How we build</h2>
       <div class="principles">
