@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3ECE1">
+<title>Inkgap – Privacy Policy</title>
+<meta name="description" content="Privacy policy of the Inkgap puzzle game: what stays on your device, how ads work, and the choices you have. Available in 13 languages.">
+<link rel="canonical" href="https://keellabs.dev/inkgap/privacy/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keel Labs">
+<meta property="og:title" content="Inkgap – Privacy Policy">
+<meta property="og:url" content="https://keellabs.dev/inkgap/privacy/">
+<link rel="icon" href="/img/keellabs-small.svg" type="image/svg+xml">
+<link rel="icon" href="/img/keellabs-64.png" type="image/png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/inkgap/fonts/newsreader.woff2">
+<style>@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(/inkgap/fonts/newsreader.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url(/inkgap/fonts/newsreader-italic.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/inkgap/fonts/spacemono-regular.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url(/inkgap/fonts/spacemono-bold.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+<style>
+  /* Bảng màu và chữ lấy từ lib/ui/palette.dart. */
+  :root {
+    --paper: #F3ECE1;
+    --paper-subtle: #ECE3D6;
+    --paper-elevated: #E5DCCE;
+    --ink: #1A1A1A;
+    --wash: #6E6860;
+    --seal: #B83A26;
+    --serif: "Newsreader", "Hiragino Mincho ProN", "Songti SC", "Songti TC", "AppleMyungjo", "Noto Serif CJK JP", Georgia, serif;
+    --mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 20px 16px 64px; }
+
+  /* Đầu trang: nhãn nhà làm game và ô chọn ngôn ngữ. */
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wash);
+  }
+  .lang { position: relative; display: flex; align-items: center; gap: 8px; }
+  .lang label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    min-height: 44px;
+    padding: 0 36px 0 12px;
+    border: 1px solid rgba(110, 104, 96, 0.6);
+    border-radius: 0;
+    background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236E6860'/%3E%3C/svg%3E") no-repeat right 12px center;
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 13px;
+    cursor: pointer;
+  }
+  select:hover { background-color: var(--paper-subtle); }
+  select:focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
+
+  /* Tiêu đề: logo Ổ khóa, tên game, tên trang. */
+  header { margin: 44px 0 36px; }
+  .mast { display: flex; align-items: center; gap: 14px; }
+  .mast svg { width: 56px; height: 56px; flex: none; }
+  .game { font-size: 40px; line-height: 1.1; letter-spacing: -0.01em; margin: 0; font-weight: 400; }
+  h1 { font-size: 30px; line-height: 1.25; font-weight: 400; font-style: italic; margin: 28px 0 10px; }
+  .updated { margin: 0; }
+  .rule { border: 0; border-top: 1px solid rgba(110, 104, 96, 0.45); margin: 0; }
+  .intro { font-size: 19px; margin: 24px 0 8px; }
+
+  /* Từng mục: số thứ tự kiểu ô màn, tiêu đề, nội dung. */
+  section { display: grid; grid-template-columns: 44px 1fr; gap: 0 12px; padding: 28px 0; border-top: 1px solid rgba(110, 104, 96, 0.3); }
+  .num { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--seal); padding-top: 4px; }
+  h2 { font-size: 22px; line-height: 1.35; font-weight: 500; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding: 0; list-style: none; }
+  li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+  li::before { content: ""; position: absolute; left: 2px; top: 0.7em; width: 7px; height: 7px; background: var(--ink); }
+  a { color: var(--ink); text-decoration-color: var(--seal); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:hover { color: var(--seal); }
+  a.home { text-decoration: none; color: var(--wash); }
+  strong { font-weight: 500; }
+
+  footer { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(110, 104, 96, 0.45); }
+  @media (max-width: 420px) {
+    body { font-size: 17px; }
+    .game { font-size: 34px; }
+    h1 { font-size: 26px; }
+    section { grid-template-columns: 1fr; }
+    .num { padding: 0 0 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="bar">
+    <a class="label home" href="https://keellabs.dev/">Keel Labs</a>
+    <div class="lang">
+      <label for="lang" id="lang-label">Language</label>
+      <select id="lang"></select>
+    </div>
+  </div>
+
+  <header>
+    <div class="mast">
+      <!-- Logo Ổ khóa: hai mảnh mực, lỗ khóa là khoảng trắng giữa chúng, dấu son ở góc. -->
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <mask id="keyhole" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+            <rect width="200" height="200" fill="#fff"/>
+            <circle cx="100" cy="86" r="19" fill="#000"/>
+            <polygon points="92,96 108,96 114,134 86,134" fill="#000"/>
+          </mask>
+        </defs>
+        <g mask="url(#keyhole)"><polygon points="30,30 88,30 117,170 30,170" fill="#1A1A1A"/></g>
+        <g transform="translate(4 5)"><g mask="url(#keyhole)"><polygon points="88,30 170,30 170,170 117,170" fill="#1A1A1A"/></g></g>
+        <rect x="150" y="150" width="34" height="34" fill="#B83A26"/>
+        <rect x="155" y="155" width="24" height="24" fill="none" stroke="#F3ECE1" stroke-width="1.5"/>
+      </svg>
+      <p class="game">Inkgap</p>
+    </div>
+    <h1 id="title"></h1>
+    <p class="label updated" id="updated"></p>
+  </header>
+
+  <hr class="rule">
+  <p class="intro" id="intro"></p>
+  <main id="body"></main>
+
+  <footer><span class="label">© 2026 <a href="https://keellabs.dev/">Keel Labs</a></span></footer>
+</div>
+
+<script>
+// Địa chỉ liên hệ hiện trong mục cuối.
+const CONTACT = 'support@keellabs.dev';
+const UPDATED = new Date(Date.UTC(2026, 10, 1));
+const GOOGLE = 'https://policies.google.com/technologies/partner-sites';
+
+// Mỗi ngôn ngữ: tên hiển thị trong ô chọn, chữ giao diện và các mục.
+// Mục là [tiêu đề, đoạn...]; đoạn là chuỗi hoặc mảng (danh sách gạch đầu dòng).
+const T = {
+  en: {
+    name: 'English', lang: 'Language', title: 'Privacy Policy', updated: 'Last updated {date}',
+    intro: 'Inkgap is a puzzle game by Keel Labs. This policy explains what information the app handles and why. In short: there is no account, we run no servers, and your progress stays on your device. The app shows ads from Google AdMob, and Google collects some data to deliver them.',
+    s: [
+      ['What stays on your device', 'The app saves which levels you have solved and whether sound and vibration are on. This is stored only on your device, is never sent to us, and is deleted when you uninstall the app.'],
+      ['What we don’t collect', 'We don’t ask for your name, email, contacts, photos or precise location. The app has no sign-in and no analytics of its own, and we never sell data.'],
+      ['Advertising', 'To keep the game free, the app shows ads through Google AdMob: an optional video you can watch to get a hint, and occasional full-screen ads between levels. To show and measure these ads, Google may collect:',
+        ['your device’s advertising identifier;', 'your IP address and the approximate location derived from it;', 'device model, operating system and app version;', 'how you interact with ads, and diagnostic data such as crashes.'],
+        'Google handles this data under its own policy: <a href="{google}">How Google uses information from sites or apps that use its services</a>.'],
+      ['Your choices', ['On Android, you can reset your advertising ID or opt out of personalised ads in your device’s Google settings.', 'On iOS, the app does not ask for permission to track you, so your advertising identifier is not shared.', 'In the EEA, the UK and Switzerland, the app asks for your consent before showing personalised ads, and you can change your choice later.', 'Sound and vibration can be turned off at any time on the home screen.']],
+      ['Children', 'Inkgap is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided information through the app, contact us and we will help remove it.'],
+      ['Changes to this policy', 'If this policy changes, we will update this page and the date at the top.'],
+      ['Contact', 'Questions about privacy? Write to <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  vi: {
+    name: 'Tiếng Việt', lang: 'Ngôn ngữ', title: 'Chính sách quyền riêng tư', updated: 'Cập nhật lần cuối {date}',
+    intro: 'Inkgap là trò chơi giải đố của Keel Labs. Chính sách này giải thích app xử lý những thông tin nào và vì sao. Nói ngắn gọn: không cần tài khoản, chúng tôi không có máy chủ nào, và tiến độ chơi của bạn chỉ nằm trên máy. App hiển thị quảng cáo của Google AdMob, và Google thu thập một số dữ liệu để phân phối quảng cáo.',
+    s: [
+      ['Dữ liệu nằm trên máy bạn', 'App lưu những màn bạn đã giải và việc bạn bật hay tắt âm thanh, rung. Các thông tin này chỉ lưu trên máy, không bao giờ gửi cho chúng tôi, và bị xóa khi bạn gỡ app.'],
+      ['Những gì chúng tôi không thu thập', 'Chúng tôi không hỏi tên, email, danh bạ, ảnh hay vị trí chính xác của bạn. App không có đăng nhập, không có công cụ phân tích riêng, và chúng tôi không bao giờ bán dữ liệu.'],
+      ['Quảng cáo', 'Để trò chơi miễn phí, app hiển thị quảng cáo qua Google AdMob: video tùy chọn mà bạn có thể xem để nhận gợi ý, và thỉnh thoảng một quảng cáo toàn màn hình giữa các màn. Để hiển thị và đo lường quảng cáo, Google có thể thu thập:',
+        ['mã định danh quảng cáo của thiết bị;', 'địa chỉ IP và vị trí gần đúng suy ra từ địa chỉ đó;', 'dòng máy, hệ điều hành và phiên bản app;', 'cách bạn tương tác với quảng cáo, cùng dữ liệu chẩn đoán như lỗi văng app.'],
+        'Google xử lý dữ liệu này theo chính sách riêng của họ: <a href="{google}">Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google</a>.'],
+      ['Lựa chọn của bạn', ['Trên Android, bạn có thể đặt lại mã quảng cáo hoặc tắt quảng cáo cá nhân hóa trong phần cài đặt Google của máy.', 'Trên iOS, app không xin quyền theo dõi bạn, nên mã định danh quảng cáo không được chia sẻ.', 'Ở Khu vực Kinh tế châu Âu, Vương quốc Anh và Thụy Sĩ, app hỏi ý bạn trước khi hiển thị quảng cáo cá nhân hóa, và bạn có thể đổi lựa chọn sau.', 'Bạn có thể tắt âm thanh và rung bất cứ lúc nào ở trang chủ.']],
+      ['Trẻ em', 'Inkgap không hướng tới trẻ em dưới 13 tuổi, và chúng tôi không cố ý thu thập thông tin cá nhân của các em. Nếu bạn cho rằng một em nhỏ đã cung cấp thông tin qua app, hãy liên hệ để chúng tôi giúp xóa.'],
+      ['Thay đổi chính sách', 'Nếu chính sách này thay đổi, chúng tôi sẽ cập nhật trang này và ngày ở đầu trang.'],
+      ['Liên hệ', 'Có câu hỏi về quyền riêng tư? Hãy viết cho chúng tôi tại <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  es: {
+    name: 'Español', lang: 'Idioma', title: 'Política de privacidad', updated: 'Última actualización: {date}',
+    intro: 'Inkgap es un juego de rompecabezas de Keel Labs. Esta política explica qué información trata la app y por qué. En resumen: no hay cuenta, no tenemos servidores y tu progreso se queda en tu dispositivo. La app muestra anuncios de Google AdMob, y Google recopila algunos datos para ofrecerlos.',
+    s: [
+      ['Lo que se queda en tu dispositivo', 'La app guarda qué niveles has resuelto y si el sonido y la vibración están activados. Esto se almacena solo en tu dispositivo, nunca se nos envía y se borra al desinstalar la app.'],
+      ['Lo que no recopilamos', 'No pedimos tu nombre, correo, contactos, fotos ni ubicación precisa. La app no tiene inicio de sesión ni analíticas propias, y nunca vendemos datos.'],
+      ['Publicidad', 'Para que el juego sea gratuito, la app muestra anuncios a través de Google AdMob: un vídeo opcional que puedes ver para obtener una pista y, de vez en cuando, anuncios a pantalla completa entre niveles. Para mostrar y medir estos anuncios, Google puede recopilar:',
+        ['el identificador de publicidad de tu dispositivo;', 'tu dirección IP y la ubicación aproximada que se deduce de ella;', 'el modelo del dispositivo, el sistema operativo y la versión de la app;', 'cómo interactúas con los anuncios y datos de diagnóstico, como los cierres inesperados.'],
+        'Google trata estos datos según su propia política: <a href="{google}">Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a>.'],
+      ['Tus opciones', ['En Android, puedes restablecer tu ID de publicidad o desactivar los anuncios personalizados en los ajustes de Google del dispositivo.', 'En iOS, la app no pide permiso para rastrearte, así que tu identificador de publicidad no se comparte.', 'En el EEE, el Reino Unido y Suiza, la app te pide consentimiento antes de mostrar anuncios personalizados, y puedes cambiar tu elección más adelante.', 'Puedes desactivar el sonido y la vibración en cualquier momento desde la pantalla de inicio.']],
+      ['Menores', 'Inkgap no está dirigido a menores de 13 años y no recopilamos a sabiendas información personal de ellos. Si crees que un menor ha facilitado información a través de la app, contáctanos y te ayudaremos a eliminarla.'],
+      ['Cambios en esta política', 'Si esta política cambia, actualizaremos esta página y la fecha que aparece arriba.'],
+      ['Contacto', '¿Tienes preguntas sobre privacidad? Escríbenos a <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  pt: {
+    name: 'Português', lang: 'Idioma', title: 'Política de Privacidade', updated: 'Última atualização: {date}',
+    intro: 'Inkgap é um jogo de quebra-cabeça da Keel Labs. Esta política explica quais informações o app trata e por quê. Resumindo: não há conta, não temos servidores e seu progresso fica no seu aparelho. O app exibe anúncios do Google AdMob, e o Google coleta alguns dados para entregá-los.',
+    s: [
+      ['O que fica no seu aparelho', 'O app salva quais fases você já resolveu e se o som e a vibração estão ligados. Isso fica armazenado só no seu aparelho, nunca é enviado para nós e é apagado quando você desinstala o app.'],
+      ['O que não coletamos', 'Não pedimos seu nome, e-mail, contatos, fotos nem localização precisa. O app não tem login nem análises próprias, e nunca vendemos dados.'],
+      ['Publicidade', 'Para manter o jogo gratuito, o app exibe anúncios pelo Google AdMob: um vídeo opcional que você pode assistir para ganhar uma dica e, de vez em quando, anúncios em tela cheia entre as fases. Para exibir e medir esses anúncios, o Google pode coletar:',
+        ['o identificador de publicidade do seu aparelho;', 'seu endereço IP e a localização aproximada obtida a partir dele;', 'modelo do aparelho, sistema operacional e versão do app;', 'como você interage com os anúncios e dados de diagnóstico, como travamentos.'],
+        'O Google trata esses dados de acordo com a própria política: <a href="{google}">Como o Google usa informações de sites ou apps que utilizam nossos serviços</a>.'],
+      ['Suas escolhas', ['No Android, você pode redefinir seu ID de publicidade ou desativar anúncios personalizados nas configurações do Google do aparelho.', 'No iOS, o app não pede permissão para rastrear você, então seu identificador de publicidade não é compartilhado.', 'No EEE, no Reino Unido e na Suíça, o app pede seu consentimento antes de exibir anúncios personalizados, e você pode mudar sua escolha depois.', 'Você pode desligar o som e a vibração a qualquer momento na tela inicial.']],
+      ['Crianças', 'O Inkgap não é direcionado a crianças menores de 13 anos, e não coletamos intencionalmente informações pessoais delas. Se você acredita que uma criança forneceu informações pelo app, fale conosco e ajudaremos a removê-las.'],
+      ['Alterações nesta política', 'Se esta política mudar, atualizaremos esta página e a data no topo.'],
+      ['Contato', 'Dúvidas sobre privacidade? Escreva para <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  fr: {
+    name: 'Français', lang: 'Langue', title: 'Politique de confidentialité', updated: 'Dernière mise à jour : {date}',
+    intro: 'Inkgap est un jeu de réflexion conçu par Keel Labs. Cette politique explique quelles informations l’application traite et pourquoi. En bref : pas de compte, aucun serveur de notre côté, et votre progression reste sur votre appareil. L’application affiche des publicités Google AdMob, et Google collecte certaines données pour les diffuser.',
+    s: [
+      ['Ce qui reste sur votre appareil', 'L’application enregistre les niveaux que vous avez résolus et l’activation du son et des vibrations. Ces données restent uniquement sur votre appareil, ne nous sont jamais envoyées et sont effacées lorsque vous désinstallez l’application.'],
+      ['Ce que nous ne collectons pas', 'Nous ne demandons ni votre nom, ni votre e-mail, ni vos contacts, ni vos photos, ni votre position précise. L’application n’a ni connexion ni outil d’analyse propre, et nous ne vendons jamais de données.'],
+      ['Publicité', 'Pour que le jeu reste gratuit, l’application affiche des publicités via Google AdMob : une vidéo facultative à regarder pour obtenir un indice, et de temps en temps une publicité plein écran entre deux niveaux. Pour afficher et mesurer ces publicités, Google peut collecter :',
+        ['l’identifiant publicitaire de votre appareil ;', 'votre adresse IP et la localisation approximative qui en découle ;', 'le modèle de l’appareil, le système d’exploitation et la version de l’application ;', 'vos interactions avec les publicités et des données de diagnostic, comme les plantages.'],
+        'Google traite ces données selon sa propre politique : <a href="{google}">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a>.'],
+      ['Vos choix', ['Sur Android, vous pouvez réinitialiser votre identifiant publicitaire ou désactiver les annonces personnalisées dans les paramètres Google de l’appareil.', 'Sur iOS, l’application ne demande pas l’autorisation de vous suivre ; votre identifiant publicitaire n’est donc pas partagé.', 'Dans l’EEE, au Royaume-Uni et en Suisse, l’application demande votre consentement avant d’afficher des annonces personnalisées, et vous pouvez modifier votre choix plus tard.', 'Le son et les vibrations peuvent être coupés à tout moment depuis l’écran d’accueil.']],
+      ['Enfants', 'Inkgap ne s’adresse pas aux enfants de moins de 13 ans, et nous ne collectons pas sciemment leurs informations personnelles. Si vous pensez qu’un enfant a fourni des informations via l’application, contactez-nous et nous vous aiderons à les supprimer.'],
+      ['Modifications de cette politique', 'Si cette politique change, nous mettrons à jour cette page ainsi que la date indiquée en haut.'],
+      ['Contact', 'Une question sur la confidentialité ? Écrivez-nous à <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  de: {
+    name: 'Deutsch', lang: 'Sprache', title: 'Datenschutzerklärung', updated: 'Zuletzt aktualisiert: {date}',
+    intro: 'Inkgap ist ein Rätselspiel von Keel Labs. Diese Erklärung beschreibt, welche Daten die App verarbeitet und warum. Kurz gesagt: Es gibt kein Konto, wir betreiben keine Server, und dein Spielfortschritt bleibt auf deinem Gerät. Die App zeigt Werbung über Google AdMob, und Google erhebt dafür einige Daten.',
+    s: [
+      ['Was auf deinem Gerät bleibt', 'Die App speichert, welche Level du gelöst hast und ob Ton und Vibration eingeschaltet sind. Diese Daten liegen nur auf deinem Gerät, werden nie an uns gesendet und beim Deinstallieren der App gelöscht.'],
+      ['Was wir nicht erheben', 'Wir fragen nicht nach deinem Namen, deiner E-Mail-Adresse, deinen Kontakten, Fotos oder deinem genauen Standort. Die App hat keine Anmeldung und keine eigene Analyse, und wir verkaufen niemals Daten.'],
+      ['Werbung', 'Damit das Spiel kostenlos bleibt, zeigt die App Werbung über Google AdMob: ein freiwilliges Video, das du für einen Tipp ansehen kannst, und gelegentlich eine Vollbildanzeige zwischen den Leveln. Um diese Anzeigen auszuliefern und zu messen, kann Google Folgendes erheben:',
+        ['die Werbe-ID deines Geräts;', 'deine IP-Adresse und den daraus abgeleiteten ungefähren Standort;', 'Gerätemodell, Betriebssystem und App-Version;', 'wie du mit Anzeigen interagierst, sowie Diagnosedaten wie Abstürze.'],
+        'Google verarbeitet diese Daten nach seinen eigenen Richtlinien: <a href="{google}">Wie Google Daten von Websites oder Apps verwendet, die Google-Dienste nutzen</a>.'],
+      ['Deine Wahlmöglichkeiten', ['Unter Android kannst du deine Werbe-ID zurücksetzen oder personalisierte Werbung in den Google-Einstellungen des Geräts deaktivieren.', 'Unter iOS fragt die App nicht nach der Erlaubnis, dich zu tracken; deine Werbe-ID wird daher nicht weitergegeben.', 'Im EWR, im Vereinigten Königreich und in der Schweiz bittet die App um deine Einwilligung, bevor personalisierte Werbung angezeigt wird, und du kannst deine Wahl später ändern.', 'Ton und Vibration lassen sich jederzeit auf dem Startbildschirm ausschalten.']],
+      ['Kinder', 'Inkgap richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von ihnen. Wenn du glaubst, dass ein Kind über die App Daten angegeben hat, melde dich bei uns – wir helfen, sie zu entfernen.'],
+      ['Änderungen dieser Erklärung', 'Wenn sich diese Erklärung ändert, aktualisieren wir diese Seite und das Datum oben.'],
+      ['Kontakt', 'Fragen zum Datenschutz? Schreib uns an <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  it: {
+    name: 'Italiano', lang: 'Lingua', title: 'Informativa sulla privacy', updated: 'Ultimo aggiornamento: {date}',
+    intro: 'Inkgap è un gioco di rompicapi di Keel Labs. Questa informativa spiega quali informazioni tratta l’app e perché. In breve: non serve un account, non abbiamo server e i tuoi progressi restano sul tuo dispositivo. L’app mostra annunci di Google AdMob, e Google raccoglie alcuni dati per pubblicarli.',
+    s: [
+      ['Cosa resta sul tuo dispositivo', 'L’app salva i livelli che hai risolto e se audio e vibrazione sono attivi. Questi dati restano solo sul tuo dispositivo, non ci vengono mai inviati e vengono cancellati quando disinstalli l’app.'],
+      ['Cosa non raccogliamo', 'Non chiediamo nome, e-mail, contatti, foto né posizione precisa. L’app non ha accesso con account né strumenti di analisi propri, e non vendiamo mai dati.'],
+      ['Pubblicità', 'Per mantenere il gioco gratuito, l’app mostra annunci tramite Google AdMob: un video facoltativo da guardare per ottenere un suggerimento e, di tanto in tanto, annunci a schermo intero tra un livello e l’altro. Per mostrare e misurare questi annunci, Google può raccogliere:',
+        ['l’identificatore pubblicitario del dispositivo;', 'l’indirizzo IP e la posizione approssimativa ricavata da esso;', 'modello del dispositivo, sistema operativo e versione dell’app;', 'come interagisci con gli annunci e dati diagnostici, come gli arresti anomali.'],
+        'Google tratta questi dati secondo la propria informativa: <a href="{google}">In che modo Google utilizza le informazioni dei siti o delle app che utilizzano i suoi servizi</a>.'],
+      ['Le tue scelte', ['Su Android puoi reimpostare l’ID pubblicità o disattivare gli annunci personalizzati nelle impostazioni Google del dispositivo.', 'Su iOS l’app non chiede il permesso di tracciarti, quindi il tuo identificatore pubblicitario non viene condiviso.', 'Nel SEE, nel Regno Unito e in Svizzera l’app chiede il tuo consenso prima di mostrare annunci personalizzati, e puoi cambiare la tua scelta in seguito.', 'Puoi disattivare audio e vibrazione in qualsiasi momento dalla schermata iniziale.']],
+      ['Minori', 'Inkgap non è rivolto ai minori di 13 anni e non raccogliamo consapevolmente loro informazioni personali. Se ritieni che un minore abbia fornito informazioni tramite l’app, contattaci e ti aiuteremo a rimuoverle.'],
+      ['Modifiche a questa informativa', 'Se questa informativa cambia, aggiorneremo questa pagina e la data in alto.'],
+      ['Contatti', 'Domande sulla privacy? Scrivici a <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  ru: {
+    name: 'Русский', lang: 'Язык', title: 'Политика конфиденциальности', updated: 'Последнее обновление: {date}',
+    intro: 'Inkgap — игра-головоломка от Keel Labs. Здесь объясняется, какие данные обрабатывает приложение и зачем. Коротко: учётная запись не нужна, своих серверов у нас нет, а ваш прогресс хранится только на устройстве. В приложении показывается реклама Google AdMob, и для её показа Google собирает некоторые данные.',
+    s: [
+      ['Что остаётся на устройстве', 'Приложение сохраняет, какие уровни вы прошли и включены ли звук и вибрация. Эти данные хранятся только на вашем устройстве, никогда не отправляются нам и удаляются вместе с приложением.'],
+      ['Чего мы не собираем', 'Мы не запрашиваем имя, электронную почту, контакты, фотографии или точное местоположение. В приложении нет входа в аккаунт и собственной аналитики, и мы никогда не продаём данные.'],
+      ['Реклама', 'Чтобы игра оставалась бесплатной, приложение показывает рекламу через Google AdMob: необязательное видео, которое можно посмотреть ради подсказки, и иногда полноэкранную рекламу между уровнями. Для показа и оценки рекламы Google может собирать:',
+        ['рекламный идентификатор устройства;', 'IP-адрес и примерное местоположение, определённое по нему;', 'модель устройства, операционную систему и версию приложения;', 'данные о взаимодействии с рекламой и диагностические данные, например о сбоях.'],
+        'Google обрабатывает эти данные в соответствии со своей политикой: <a href="{google}">Как Google использует информацию с сайтов и из приложений, которые пользуются сервисами Google</a>.'],
+      ['Ваш выбор', ['На Android можно сбросить рекламный идентификатор или отключить персонализированную рекламу в настройках Google на устройстве.', 'На iOS приложение не запрашивает разрешение на отслеживание, поэтому рекламный идентификатор не передаётся.', 'В ЕЭЗ, Великобритании и Швейцарии приложение спрашивает ваше согласие, прежде чем показывать персонализированную рекламу, и выбор можно изменить позже.', 'Звук и вибрацию можно отключить в любой момент на главном экране.']],
+      ['Дети', 'Inkgap не предназначен для детей младше 13 лет, и мы сознательно не собираем их персональные данные. Если вы считаете, что ребёнок передал данные через приложение, свяжитесь с нами, и мы поможем их удалить.'],
+      ['Изменения политики', 'Если политика изменится, мы обновим эту страницу и дату вверху.'],
+      ['Контакты', 'Вопросы о конфиденциальности? Пишите на <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  ja: {
+    name: '日本語', lang: '言語', title: 'プライバシーポリシー', updated: '最終更新日：{date}',
+    intro: 'Inkgap は Keel Labs が制作したパズルゲームです。このポリシーでは、アプリが扱う情報とその理由を説明します。要点は次のとおりです。アカウントは不要で、私たちはサーバーを運用しておらず、プレイの進行状況は端末内にのみ保存されます。アプリには Google AdMob の広告が表示され、広告配信のために Google が一部のデータを収集します。',
+    s: [
+      ['端末に保存される情報', 'アプリは、クリアしたステージと、サウンド・バイブレーションのオン／オフを保存します。これらは端末内にのみ保存され、私たちに送信されることはなく、アプリを削除すると消去されます。'],
+      ['収集しない情報', 'お名前、メールアドレス、連絡先、写真、正確な位置情報をお尋ねすることはありません。アプリにはログイン機能も独自の分析機能もなく、データを販売することも一切ありません。'],
+      ['広告', 'ゲームを無料で提供するため、アプリは Google AdMob を通じて広告を表示します。ヒントを得るために任意で視聴できる動画広告と、ステージの合間にときどき表示される全画面広告です。広告の表示と効果測定のため、Google は次の情報を収集することがあります。',
+        ['端末の広告 ID', 'IP アドレスと、そこから推定されるおおよその位置情報', '端末の機種、OS、アプリのバージョン', '広告の操作状況、およびクラッシュなどの診断データ'],
+        'これらのデータは Google 独自のポリシーに従って取り扱われます：<a href="{google}">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>'],
+      ['ユーザーの選択', ['Android では、端末の Google 設定から広告 ID のリセットや、パーソナライズ広告のオプトアウトができます。', 'iOS では、アプリがトラッキングの許可を求めないため、広告識別子は共有されません。', 'EEA、英国、スイスでは、パーソナライズ広告を表示する前にアプリが同意を確認します。選択は後から変更できます。', 'サウンドとバイブレーションは、ホーム画面からいつでもオフにできます。']],
+      ['お子さまについて', 'Inkgap は 13 歳未満のお子さまを対象としておらず、お子さまの個人情報を意図的に収集することはありません。お子さまがアプリを通じて情報を提供したと思われる場合は、ご連絡ください。削除のお手伝いをいたします。'],
+      ['ポリシーの変更', '本ポリシーを変更する場合は、このページと冒頭の日付を更新します。'],
+      ['お問い合わせ', 'プライバシーに関するご質問は <a href="mailto:{email}">{email}</a> までお寄せください。'],
+    ],
+  },
+  ko: {
+    name: '한국어', lang: '언어', title: '개인정보 처리방침', updated: '최종 업데이트: {date}',
+    intro: 'Inkgap은 Keel Labs가 만든 퍼즐 게임입니다. 이 방침은 앱이 어떤 정보를 다루며 그 이유가 무엇인지 설명합니다. 요약하면, 계정이 필요 없고 저희는 서버를 운영하지 않으며 게임 진행 상황은 기기에만 저장됩니다. 앱에는 Google AdMob 광고가 표시되며, Google은 광고 제공을 위해 일부 데이터를 수집합니다.',
+    s: [
+      ['기기에만 저장되는 정보', '앱은 클리어한 스테이지와 소리·진동 설정을 저장합니다. 이 정보는 기기에만 저장되고 저희에게 전송되지 않으며, 앱을 삭제하면 함께 지워집니다.'],
+      ['수집하지 않는 정보', '이름, 이메일, 연락처, 사진, 정확한 위치를 요청하지 않습니다. 앱에는 로그인 기능이나 자체 분석 도구가 없으며, 저희는 어떤 데이터도 판매하지 않습니다.'],
+      ['광고', '게임을 무료로 제공하기 위해 앱은 Google AdMob을 통해 광고를 표시합니다. 힌트를 얻기 위해 선택적으로 시청하는 동영상 광고와, 스테이지 사이에 가끔 나오는 전면 광고입니다. 광고를 표시하고 성과를 측정하기 위해 Google은 다음 정보를 수집할 수 있습니다.',
+        ['기기의 광고 식별자', 'IP 주소 및 이를 통해 추정한 대략적인 위치', '기기 모델, 운영체제, 앱 버전', '광고와의 상호작용 및 비정상 종료 같은 진단 데이터'],
+        'Google은 자체 정책에 따라 이 데이터를 처리합니다: <a href="{google}">Google 서비스를 사용하는 사이트 또는 앱에서 수집한 정보를 Google이 사용하는 방법</a>'],
+      ['사용자의 선택', ['Android에서는 기기의 Google 설정에서 광고 ID를 재설정하거나 맞춤 광고를 해제할 수 있습니다.', 'iOS에서는 앱이 추적 권한을 요청하지 않으므로 광고 식별자가 공유되지 않습니다.', 'EEA, 영국, 스위스에서는 맞춤 광고를 표시하기 전에 앱이 동의를 요청하며, 나중에 선택을 변경할 수 있습니다.', '소리와 진동은 홈 화면에서 언제든지 끌 수 있습니다.']],
+      ['아동', 'Inkgap은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. 아동이 앱을 통해 정보를 제공했다고 생각되면 연락해 주세요. 삭제를 도와드리겠습니다.'],
+      ['방침 변경', '이 방침이 변경되면 이 페이지와 상단의 날짜를 업데이트합니다.'],
+      ['문의', '개인정보 관련 문의는 <a href="mailto:{email}">{email}</a>로 보내 주세요.'],
+    ],
+  },
+  zh: {
+    name: '简体中文', lang: '语言', title: '隐私政策', updated: '最后更新：{date}',
+    intro: 'Inkgap 是 Keel Labs 出品的一款解谜游戏。本政策说明应用会处理哪些信息以及原因。简而言之：无需注册账号，我们不运营任何服务器，你的游戏进度只保存在设备上。应用会展示 Google AdMob 广告，Google 会为此收集部分数据。',
+    s: [
+      ['保存在设备上的信息', '应用会保存你已通过的关卡，以及声音和振动是否开启。这些信息只保存在你的设备上，绝不会发送给我们，卸载应用后即被删除。'],
+      ['我们不收集的信息', '我们不会询问你的姓名、电子邮箱、通讯录、照片或精确位置。应用没有登录功能，也没有自有的统计分析，我们从不出售任何数据。'],
+      ['广告', '为了让游戏保持免费，应用通过 Google AdMob 展示广告：一种是你可以自愿观看以获取提示的视频广告，另一种是关卡之间偶尔出现的全屏广告。为了展示和衡量这些广告，Google 可能会收集：',
+        ['设备的广告标识符；', 'IP 地址以及据此推断的大致位置；', '设备型号、操作系统和应用版本；', '你与广告的互动情况，以及崩溃等诊断数据。'],
+        'Google 会依照其自身政策处理这些数据：<a href="{google}">Google 如何使用来自使用其服务的网站或应用的信息</a>。'],
+      ['你的选择', ['在 Android 上，你可以在设备的 Google 设置中重置广告 ID，或停用个性化广告。', '在 iOS 上，应用不会请求跟踪权限，因此不会共享你的广告标识符。', '在欧洲经济区、英国和瑞士，应用会在展示个性化广告前征求你的同意，你之后也可以更改选择。', '你可以随时在主屏幕上关闭声音和振动。']],
+      ['儿童', 'Inkgap 并非面向 13 岁以下的儿童，我们不会故意收集儿童的个人信息。如果你认为有儿童通过本应用提供了信息，请联系我们，我们会协助删除。'],
+      ['政策变更', '如本政策有所变更，我们会更新本页面及顶部的日期。'],
+      ['联系我们', '如有隐私方面的问题，请发送邮件至 <a href="mailto:{email}">{email}</a>。'],
+    ],
+  },
+  'zh-Hant': {
+    name: '繁體中文', lang: '語言', title: '隱私權政策', updated: '最後更新：{date}',
+    intro: 'Inkgap 是 Keel Labs 推出的一款解謎遊戲。本政策說明應用程式會處理哪些資訊以及原因。簡單來說：不需要帳號，我們不經營任何伺服器，你的遊戲進度只儲存在裝置上。應用程式會顯示 Google AdMob 廣告，Google 會為此收集部分資料。',
+    s: [
+      ['儲存在裝置上的資訊', '應用程式會儲存你已破解的關卡，以及音效和震動是否開啟。這些資訊只儲存在你的裝置上，絕不會傳送給我們，移除應用程式後即會刪除。'],
+      ['我們不收集的資訊', '我們不會詢問你的姓名、電子郵件、聯絡人、相片或精確位置。應用程式沒有登入功能，也沒有自己的數據分析，我們絕不出售任何資料。'],
+      ['廣告', '為了讓遊戲維持免費，應用程式透過 Google AdMob 顯示廣告：一種是你可以自行選擇觀看以取得提示的影片廣告，另一種是關卡之間偶爾出現的全螢幕廣告。為了顯示及評估這些廣告，Google 可能會收集：',
+        ['裝置的廣告識別碼；', 'IP 位址以及據此推估的大略位置；', '裝置型號、作業系統和應用程式版本；', '你與廣告的互動情形，以及當機等診斷資料。'],
+        'Google 會依照其自身政策處理這些資料：<a href="{google}">Google 如何使用採用 Google 服務的網站或應用程式所提供的資訊</a>。'],
+      ['你的選擇', ['在 Android 上，你可以在裝置的 Google 設定中重設廣告 ID，或停用個人化廣告。', '在 iOS 上，應用程式不會要求追蹤權限，因此不會分享你的廣告識別碼。', '在歐洲經濟區、英國和瑞士，應用程式會在顯示個人化廣告前徵求你的同意，你之後也可以變更選擇。', '你可以隨時在主畫面關閉音效和震動。']],
+      ['兒童', 'Inkgap 並非以 13 歲以下兒童為對象，我們也不會蓄意收集兒童的個人資訊。如果你認為有兒童透過本應用程式提供了資訊，請與我們聯絡，我們會協助刪除。'],
+      ['政策變更', '如本政策有所變更，我們會更新本頁面及頂端的日期。'],
+      ['聯絡我們', '如有隱私相關問題，請來信 <a href="mailto:{email}">{email}</a>。'],
+    ],
+  },
+  id: {
+    name: 'Bahasa Indonesia', lang: 'Bahasa', title: 'Kebijakan Privasi', updated: 'Terakhir diperbarui {date}',
+    intro: 'Inkgap adalah game teka-teki buatan Keel Labs. Kebijakan ini menjelaskan informasi apa saja yang ditangani aplikasi dan alasannya. Singkatnya: tidak perlu akun, kami tidak menjalankan server apa pun, dan progres permainanmu tetap tersimpan di perangkat. Aplikasi menampilkan iklan dari Google AdMob, dan Google mengumpulkan sebagian data untuk menayangkannya.',
+    s: [
+      ['Yang tersimpan di perangkatmu', 'Aplikasi menyimpan level yang sudah kamu selesaikan serta apakah suara dan getaran sedang aktif. Data ini hanya tersimpan di perangkatmu, tidak pernah dikirim ke kami, dan terhapus saat aplikasi dicopot.'],
+      ['Yang tidak kami kumpulkan', 'Kami tidak meminta nama, email, kontak, foto, atau lokasi persismu. Aplikasi tidak memiliki fitur masuk akun maupun analitik sendiri, dan kami tidak pernah menjual data.'],
+      ['Iklan', 'Agar game tetap gratis, aplikasi menampilkan iklan melalui Google AdMob: video opsional yang bisa kamu tonton untuk mendapat petunjuk, dan sesekali iklan layar penuh di antara level. Untuk menampilkan dan mengukur iklan tersebut, Google dapat mengumpulkan:',
+        ['ID iklan perangkatmu;', 'alamat IP dan perkiraan lokasi yang diperoleh darinya;', 'model perangkat, sistem operasi, dan versi aplikasi;', 'interaksimu dengan iklan, serta data diagnostik seperti aplikasi yang tiba-tiba tertutup.'],
+        'Google menangani data ini berdasarkan kebijakannya sendiri: <a href="{google}">Cara Google menggunakan informasi dari situs atau aplikasi yang menggunakan layanannya</a>.'],
+      ['Pilihanmu', ['Di Android, kamu dapat mereset ID iklan atau menonaktifkan iklan yang dipersonalisasi di setelan Google perangkat.', 'Di iOS, aplikasi tidak meminta izin untuk melacakmu, sehingga ID iklanmu tidak dibagikan.', 'Di EEA, Inggris, dan Swiss, aplikasi meminta persetujuanmu sebelum menampilkan iklan yang dipersonalisasi, dan kamu bisa mengubah pilihan itu nanti.', 'Suara dan getaran dapat dimatikan kapan saja di layar utama.']],
+      ['Anak-anak', 'Inkgap tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan informasi pribadi mereka. Jika kamu yakin seorang anak telah memberikan informasi melalui aplikasi, hubungi kami dan kami akan membantu menghapusnya.'],
+      ['Perubahan kebijakan', 'Jika kebijakan ini berubah, kami akan memperbarui halaman ini dan tanggal di bagian atas.'],
+      ['Kontak', 'Ada pertanyaan soal privasi? Kirim email ke <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+};
+
+// ?lang=… → lựa chọn đã lưu → ngôn ngữ trình duyệt/hệ thống → tiếng Anh.
+function match(tag) {
+  const t = String(tag || '').toLowerCase();
+  if (t.startsWith('zh')) return /hant|-tw|-hk|-mo/.test(t) ? 'zh-Hant' : 'zh';
+  const base = t.split('-')[0];
+  return Object.keys(T).find((k) => k === base) || null;
+}
+
+function initial() {
+  const q = match(new URLSearchParams(location.search).get('lang'));
+  if (q) return q;
+  try {
+    const saved = localStorage.getItem('inkgap-privacy-lang');
+    if (saved && T[saved]) return saved;
+  } catch (_) {}
+  for (const l of navigator.languages || [navigator.language]) {
+    const m = match(l);
+    if (m) return m;
+  }
+  return 'en';
+}
+
+const fill = (s) => s.replaceAll('{email}', CONTACT).replaceAll('{google}', GOOGLE);
+
+function render(code) {
+  const t = T[code];
+  document.documentElement.lang = code;
+  document.title = 'Inkgap – ' + t.title;
+  document.getElementById('lang-label').textContent = t.lang;
+  document.getElementById('lang').setAttribute('aria-label', t.lang);
+  document.getElementById('title').textContent = t.title;
+  const date = new Intl.DateTimeFormat(code, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(UPDATED);
+  document.getElementById('updated').textContent = t.updated.replace('{date}', date);
+  document.getElementById('intro').textContent = t.intro;
+  document.getElementById('body').innerHTML = t.s.map(([h, ...parts], i) => `
+    <section>
+      <span class="num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+      <div>
+        <h2>${h}</h2>
+        ${parts.map((p) => Array.isArray(p) ? `<ul>${p.map((li) => `<li>${fill(li)}</li>`).join('')}</ul>` : `<p>${fill(p)}</p>`).join('')}
+      </div>
+    </section>`).join('');
+}
+
+const select = document.getElementById('lang');
+select.innerHTML = Object.entries(T).map(([k, v]) => `<option value="${k}" lang="${k}">${v.name}</option>`).join('');
+select.value = initial();
+render(select.value);
+select.addEventListener('change', () => {
+  render(select.value);
+  try { localStorage.setItem('inkgap-privacy-lang', select.value); } catch (_) {}
+  const url = new URL(location.href);
+  url.searchParams.set('lang', select.value);
+  history.replaceState(null, '', url);
+});
+</script>
+</body>
+</html>
