@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3ECE1">
+<title>Inkgap – Support</title>
+<meta name="description" content="Support for the Inkgap puzzle game: contact Keel Labs, answers to common questions, and links to the privacy policy.">
+<link rel="canonical" href="https://keellabs.dev/inkgap/support/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keel Labs">
+<meta property="og:title" content="Inkgap – Support">
+<meta property="og:url" content="https://keellabs.dev/inkgap/support/">
+<link rel="icon" href="/img/keellabs-small.svg" type="image/svg+xml">
+<link rel="icon" href="/img/keellabs-64.png" type="image/png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/inkgap/fonts/newsreader.woff2">
+<style>@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(/inkgap/fonts/newsreader.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url(/inkgap/fonts/newsreader-italic.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/inkgap/fonts/spacemono-regular.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url(/inkgap/fonts/spacemono-bold.woff2) format('woff2');unicode-range:U+0000-024F,U+0259,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0309,U+0323,U+0329,U+1E00-1EFF,U+2000-206F,U+20AB,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+<style>
+  /* Bảng màu và chữ lấy từ lib/ui/palette.dart. */
+  :root {
+    --paper: #F3ECE1;
+    --paper-subtle: #ECE3D6;
+    --paper-elevated: #E5DCCE;
+    --ink: #1A1A1A;
+    --wash: #6E6860;
+    --seal: #B83A26;
+    --serif: "Newsreader", "Hiragino Mincho ProN", "Songti SC", "Songti TC", "AppleMyungjo", "Noto Serif CJK JP", Georgia, serif;
+    --mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 20px 16px 64px; }
+
+  /* Đầu trang: nhãn nhà làm game và ô chọn ngôn ngữ. */
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wash);
+  }
+  .lang { position: relative; display: flex; align-items: center; gap: 8px; }
+  .lang label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    min-height: 44px;
+    padding: 0 36px 0 12px;
+    border: 1px solid rgba(110, 104, 96, 0.6);
+    border-radius: 0;
+    background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236E6860'/%3E%3C/svg%3E") no-repeat right 12px center;
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 13px;
+    cursor: pointer;
+  }
+  select:hover { background-color: var(--paper-subtle); }
+  select:focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
+
+  /* Tiêu đề: logo Ổ khóa, tên game, tên trang. */
+  header { margin: 44px 0 36px; }
+  .mast { display: flex; align-items: center; gap: 14px; }
+  .mast svg { width: 56px; height: 56px; flex: none; }
+  .game { font-size: 40px; line-height: 1.1; letter-spacing: -0.01em; margin: 0; font-weight: 400; }
+  h1 { font-size: 30px; line-height: 1.25; font-weight: 400; font-style: italic; margin: 28px 0 10px; }
+  .updated { margin: 0; }
+  .rule { border: 0; border-top: 1px solid rgba(110, 104, 96, 0.45); margin: 0; }
+  .intro { font-size: 19px; margin: 24px 0 8px; }
+
+  /* Từng mục: số thứ tự kiểu ô màn, tiêu đề, nội dung. */
+  section { display: grid; grid-template-columns: 44px 1fr; gap: 0 12px; padding: 28px 0; border-top: 1px solid rgba(110, 104, 96, 0.3); }
+  .num { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--seal); padding-top: 4px; }
+  h2 { font-size: 22px; line-height: 1.35; font-weight: 500; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding: 0; list-style: none; }
+  li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+  li::before { content: ""; position: absolute; left: 2px; top: 0.7em; width: 7px; height: 7px; background: var(--ink); }
+  a { color: var(--ink); text-decoration-color: var(--seal); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:hover { color: var(--seal); }
+  a.home { text-decoration: none; color: var(--wash); }
+  strong { font-weight: 500; }
+
+  footer { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(110, 104, 96, 0.45); }
+  @media (max-width: 420px) {
+    body { font-size: 17px; }
+    .game { font-size: 34px; }
+    h1 { font-size: 26px; }
+    section { grid-template-columns: 1fr; }
+    .num { padding: 0 0 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="bar">
+    <a class="label home" href="https://keellabs.dev/">Keel Labs</a>
+  </div>
+
+  <header>
+    <div class="mast">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <mask id="keyhole" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+            <rect width="200" height="200" fill="#fff"/>
+            <circle cx="100" cy="86" r="19" fill="#000"/>
+            <polygon points="92,96 108,96 114,134 86,134" fill="#000"/>
+          </mask>
+        </defs>
+        <g mask="url(#keyhole)"><polygon points="30,30 88,30 117,170 30,170" fill="#1A1A1A"/></g>
+        <g transform="translate(4 5)"><g mask="url(#keyhole)"><polygon points="88,30 170,30 170,170 117,170" fill="#1A1A1A"/></g></g>
+        <rect x="150" y="150" width="34" height="34" fill="#B83A26"/>
+        <rect x="155" y="155" width="24" height="24" fill="none" stroke="#F3ECE1" stroke-width="1.5"/>
+      </svg>
+      <p class="game">Inkgap</p>
+    </div>
+    <h1>Support</h1>
+  </header>
+
+  <hr class="rule">
+  <p class="intro">Inkgap is a puzzle game by Keel Labs. Questions, bug reports and ideas are welcome at <a href="mailto:support@keellabs.dev">support@keellabs.dev</a>.</p>
+  <main>
+  <section><span class="num">01</span><div><h2>Is my progress saved?</h2><p>Yes. Your solved levels and your sound and vibration settings are saved on your device only. There is no account and nothing is synced, so deleting the app or switching phones starts you from level 1.</p></div></section>
+  <section><span class="num">02</span><div><h2>I am stuck on a level</h2><p>Rotate a piece by tapping it; a piece only locks in when it is turned the right way and placed on its spot. Pieces that look identical, such as the two eyes of the owl, can go in either spot. Hints are available from the game screen.</p></div></section>
+  <section><span class="num">03</span><div><h2>How do hints and ads work?</h2><p>Inkgap is free and shows ads from Google AdMob: a short ad after every second solved level, and optional ads you can watch to unlock a hint. If ads are not loading, check your connection and try again later.</p></div></section>
+  <section><span class="num">04</span><div><h2>Can I change my ad privacy choices?</h2><p>Where the law requires it (for example in the European Economic Area and the UK), Settings shows a “Privacy choices” row that reopens the consent form. Details are in the <a href="/inkgap/privacy/">Privacy Policy</a>.</p></div></section>
+  <section><span class="num">05</span><div><h2>Something is broken or looks wrong</h2><p>Email us the device model, the OS version and what happened. A screenshot helps. We read every message.</p></div></section>
+  </main>
+
+  <footer><span class="label">© 2026 <a href="https://keellabs.dev/">Keel Labs</a> · <a href="/inkgap/privacy/">Privacy Policy</a></span></footer>
+</div>
+</body>
+</html>
