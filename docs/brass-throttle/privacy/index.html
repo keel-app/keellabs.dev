@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0C0E12">
+<title>Brass Throttle – Privacy Policy</title>
+<meta name="description" content="Privacy policy of Brass Throttle, the motorcycle combat racing game by Keel Labs: what stays on your device, track data downloads, in-app purchases through Google Play, and your choices. Available in 12 languages.">
+<link rel="canonical" href="https://keellabs.dev/brass-throttle/privacy/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keel Labs">
+<meta property="og:title" content="Brass Throttle – Privacy Policy">
+<meta property="og:url" content="https://keellabs.dev/brass-throttle/privacy/">
+<link rel="icon" href="/img/keellabs-small.svg" type="image/svg+xml">
+<link rel="icon" href="/img/keellabs-64.png" type="image/png">
+<link rel="preload" as="font" type="font/ttf" crossorigin href="/brass-throttle/fonts/Chivo-Variable.ttf">
+<style>
+  /* Font của game (OFL): Anton cho tiêu đề, Chivo cho nội dung. Chữ Trung/Nhật/Hàn/Thái/Nga dùng font hệ thống. */
+  @font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap; src: url(/brass-throttle/fonts/Anton-Regular.ttf) format('truetype'); }
+  @font-face { font-family: 'Chivo'; font-style: normal; font-weight: 100 900; font-display: swap; src: url(/brass-throttle/fonts/Chivo-Variable.ttf) format('truetype'); }
+  /* Bảng màu lấy từ UiKit của game. */
+  :root {
+    --bg: #0C0E12;
+    --surface: #1A1C20;
+    --surface-2: #282A2E;
+    --chalk: #F4F7FA;
+    --muted: #B9B2AC;
+    --orange: #FF6E22;
+    --orange-text: #FFA170;
+    --line: rgba(244, 247, 250, 0.14);
+    --head: "Anton", "Hiragino Kaku Gothic ProN", "PingFang SC", "Apple SD Gothic Neo", "Noto Sans CJK SC", Impact, sans-serif;
+    --body: "Chivo", system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "PingFang SC", "Noto Sans", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--chalk); font-family: var(--body); font-size: 17px; line-height: 1.65; }
+  .page { max-width: 720px; margin: 0 auto; padding: 20px 16px 64px; }
+
+  /* Đầu trang: nhãn Keel Labs và ô chọn ngôn ngữ. */
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .label { font-family: var(--body); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  a.home { text-decoration: none; }
+  a.home:hover { color: var(--orange-text); }
+  .lang label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  select {
+    appearance: none; -webkit-appearance: none; min-height: 44px; padding: 0 36px 0 12px;
+    border: 1px solid var(--line); border-radius: 0;
+    background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23FFA170'/%3E%3C/svg%3E") no-repeat right 12px center;
+    color: var(--chalk); font-family: var(--body); font-size: 14px; cursor: pointer;
+  }
+  select:hover { background-color: var(--surface-2); }
+  select:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
+  /* Tiêu đề: logo game, tên game, tên trang. */
+  header { margin: 36px 0 28px; }
+  .mast { display: flex; align-items: center; gap: 16px; }
+  .mast img { width: 84px; height: 84px; flex: none; }
+  .game { font-family: var(--head); font-size: 44px; line-height: 1; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; font-weight: 400; }
+  .tag { display: inline-block; margin-top: 8px; background: var(--orange); color: #07080A; font-family: var(--head); font-size: 14px; letter-spacing: 0.06em; padding: 2px 12px; transform: skewX(-12deg); }
+  h1 { font-family: var(--head); font-size: 32px; line-height: 1.2; font-weight: 400; text-transform: uppercase; margin: 30px 0 8px; }
+  .updated { margin: 0; }
+  .intro { font-size: 18px; margin: 24px 0 8px; padding: 16px 18px; background: var(--surface); border-left: 4px solid var(--orange); }
+
+  /* Từng mục: số thứ tự, tiêu đề, nội dung. */
+  section { display: grid; grid-template-columns: 48px 1fr; gap: 0 12px; padding: 26px 0; border-top: 1px solid var(--line); }
+  .num { font-family: var(--head); font-size: 22px; color: var(--orange); line-height: 1.3; }
+  h2 { font-family: var(--head); font-size: 22px; line-height: 1.3; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding: 0; list-style: none; }
+  li { position: relative; padding-left: 22px; margin-bottom: 8px; }
+  li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 8px; height: 8px; background: var(--orange); transform: skewX(-12deg); }
+  a { color: var(--orange-text); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:hover { color: var(--orange); }
+  strong { font-weight: 700; }
+
+  footer { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+  footer a { color: var(--muted); }
+  @media (max-width: 440px) {
+    body { font-size: 16px; }
+    .game { font-size: 34px; }
+    .mast img { width: 64px; height: 64px; }
+    h1 { font-size: 26px; }
+    section { grid-template-columns: 1fr; }
+    .num { padding: 0 0 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="bar">
+    <a class="label home" href="https://keellabs.dev/">Keel Labs</a>
+    <div class="lang">
+      <label for="lang" id="lang-label">Language</label>
+      <select id="lang"></select>
+    </div>
+  </div>
+
+  <header>
+    <div class="mast">
+      <img src="/brass-throttle/img/logo.png" alt="" width="84" height="84">
+      <div>
+        <p class="game">Brass Throttle</p>
+        <span class="tag">MOTO GANG BRAWL</span>
+      </div>
+    </div>
+    <h1 id="title"></h1>
+    <p class="label updated" id="updated"></p>
+  </header>
+
+  <p class="intro" id="intro"></p>
+  <main id="body"></main>
+
+  <footer><span class="label">© 2026 <a href="https://keellabs.dev/">Keel Labs</a></span></footer>
+</div>
+
+<script>
+// Địa chỉ liên hệ hiện trong mục cuối.
+const CONTACT = 'support@keellabs.dev';
+const UPDATED = new Date(Date.UTC(2026, 10, 21));
+const LINKS = {
+  gplay: 'https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice',
+  gpolicy: 'https://policies.google.com/privacy',
+  unity: 'https://unity.com/legal/game-player-and-app-user-privacy-policy',
+  refund: 'https://support.google.com/googleplay/answer/2479637',
+};
+
+// Mỗi ngôn ngữ: tên hiển thị trong ô chọn, chữ giao diện và các mục.
+// Mục là [tiêu đề, đoạn...]; đoạn là chuỗi hoặc mảng (danh sách gạch đầu dòng).
+// Nội dung phải khớp với game thật (rà code 2026-11-21): không tài khoản, không quảng cáo, không analytics riêng;
+// mạng chỉ dùng để tải dữ liệu chặng và mua Gem qua Google Play.
+const T = {
+  en: {
+    name: 'English', lang: 'Language', title: 'Privacy Policy', updated: 'Last updated {date}',
+    intro: 'Brass Throttle is a motorcycle combat racing game by Keel Labs. This policy explains what information the game handles and why. In short: there is no account and no advertising, your progress stays on your device, and purchases are processed by Google Play — we never see your payment details.',
+    s: [
+      ['What stays on your device', 'The game saves your progress (bikes, upgrades, Gold, Gems, completed stages, Brawler Pass rewards, cosmetics), your settings (language, sound, vibration, graphics) and the order IDs of Gem purchases, so the same purchase is never credited twice. This data is stored only on your device and is not sent to us.',
+        'If Android backup is turned on for your Google account, Android may include this game data in your device backup and restore it on a new device. You can manage this in your device’s backup settings.'],
+      ['Track data downloads', 'To keep the install small, the game downloads track content (3D models, textures and music for each stage) after installation: through Google Play when you install or update the game, and from our content server when you open a stage that is not on your device yet. These requests contain no account, advertising ID or game progress — only which file is needed. As with any web server, our hosting provider may keep standard technical logs (such as IP address, time and user agent) for security and operations. Downloads use encrypted connections, and the game asks before downloading large files over mobile data.'],
+      ['In-app purchases', 'You can buy Gem packs inside the game. Payments are handled entirely by Google Play under your Google account: we never receive your name, email, card or other payment details. Google tells the game which pack was bought and gives an order ID, which the game uses to add the Gems and stores on your device as described above.',
+        'Google processes your payment information under the <a href="{gplay}">Google Payments Privacy Notice</a> and the <a href="{gpolicy}">Google Privacy Policy</a>. For refunds, see <a href="{refund}">Google Play’s refund policy</a>.'],
+      ['Game engine', 'Brass Throttle is built with the Unity engine and uses Unity In-App Purchasing to talk to Google Play. Like most apps, these components may send limited technical data needed to work (such as device model, operating system and app version) to Unity Technologies. See the <a href="{unity}">Unity Game Player and App User Privacy Policy</a>.'],
+      ['What we don’t collect', 'We don’t ask for your name, email, contacts, photos, microphone or location. The game has no sign-in, no advertising and no analytics of its own, and we never sell data. Rivals and “ghost” opponents are computer-controlled; nothing about you is shared with other players.'],
+      ['Permissions', ['Internet and network state: to download track data and to make purchases.', 'Vibration: for hit and crash feedback (can be turned off in Settings).', 'Background download service: so Google Play can finish downloading game data.', 'Billing: to buy Gem packs through Google Play.']],
+      ['Your choices', ['Turn off vibration, change the language and graphics in Settings.', 'Delete downloaded track data in Settings → Track data.', 'Reset all progress in Settings → Wipe data. Uninstalling the game deletes everything stored on your device.', 'Your purchase history stays in your Google Play account, where you can view it and request refunds.']],
+      ['Children', 'Brass Throttle is a game for teens and adults with cartoon violence, and it is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information through the game, contact us and we will help remove it.'],
+      ['Changes to this policy', 'If this policy changes — for example if we add new features that handle data — we will update this page and the date at the top.'],
+      ['Contact', 'Questions about privacy? Write to <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  vi: {
+    name: 'Tiếng Việt', lang: 'Ngôn ngữ', title: 'Chính sách quyền riêng tư', updated: 'Cập nhật lần cuối {date}',
+    intro: 'Brass Throttle là trò chơi đua mô tô kết hợp đánh nhau của Keel Labs. Chính sách này giải thích game xử lý những thông tin nào và vì sao. Nói ngắn gọn: không cần tài khoản, không có quảng cáo, tiến độ chơi nằm trên máy của bạn, và việc mua hàng do Google Play xử lý — chúng tôi không bao giờ thấy thông tin thanh toán của bạn.',
+    s: [
+      ['Dữ liệu nằm trên máy bạn', 'Game lưu tiến độ chơi (xe, nâng cấp, Vàng, Gem, các chặng đã qua, phần thưởng Brawler Pass, đồ thời trang), cài đặt (ngôn ngữ, âm thanh, rung, đồ hoạ) và mã đơn hàng của các lần mua Gem, để một giao dịch không bao giờ bị cộng hai lần. Dữ liệu này chỉ lưu trên máy bạn và không gửi cho chúng tôi.',
+        'Nếu bạn bật sao lưu Android cho tài khoản Google, Android có thể đưa dữ liệu game này vào bản sao lưu của máy và khôi phục khi bạn chuyển sang máy mới. Bạn quản lý việc này trong phần cài đặt sao lưu của máy.'],
+      ['Tải dữ liệu chặng', 'Để bản cài đặt gọn nhẹ, game tải nội dung chặng (mô hình 3D, hình ảnh và nhạc của từng chặng) sau khi cài: qua Google Play khi bạn cài hoặc cập nhật game, và từ máy chủ nội dung của chúng tôi khi bạn mở một chặng chưa có trên máy. Các yêu cầu này không chứa tài khoản, mã quảng cáo hay tiến độ chơi — chỉ có tên tệp cần tải. Cũng như mọi máy chủ web, nhà cung cấp dịch vụ lưu trữ có thể giữ nhật ký kỹ thuật thông thường (như địa chỉ IP, thời gian, user agent) để bảo mật và vận hành. Việc tải dùng kết nối mã hoá, và game hỏi trước khi tải tệp lớn bằng dữ liệu di động.'],
+      ['Mua hàng trong game', 'Bạn có thể mua các gói Gem trong game. Việc thanh toán do Google Play xử lý hoàn toàn bằng tài khoản Google của bạn: chúng tôi không bao giờ nhận tên, email, thẻ hay thông tin thanh toán nào của bạn. Google chỉ báo cho game gói nào đã được mua kèm một mã đơn hàng; game dùng mã này để cộng Gem và lưu nó trên máy như mô tả ở trên.',
+        'Google xử lý thông tin thanh toán của bạn theo <a href="{gplay}">Thông báo quyền riêng tư của Google Payments</a> và <a href="{gpolicy}">Chính sách quyền riêng tư của Google</a>. Về hoàn tiền, xem <a href="{refund}">chính sách hoàn tiền của Google Play</a>.'],
+      ['Công cụ làm game', 'Brass Throttle được làm bằng Unity và dùng Unity In-App Purchasing để kết nối với Google Play. Như phần lớn ứng dụng, các thành phần này có thể gửi một số dữ liệu kỹ thuật cần thiết để hoạt động (như dòng máy, hệ điều hành, phiên bản game) cho Unity Technologies. Xem <a href="{unity}">Chính sách quyền riêng tư dành cho người chơi và người dùng ứng dụng của Unity</a>.'],
+      ['Những gì chúng tôi không thu thập', 'Chúng tôi không hỏi tên, email, danh bạ, ảnh, micro hay vị trí của bạn. Game không có đăng nhập, không có quảng cáo, không có công cụ phân tích riêng, và chúng tôi không bao giờ bán dữ liệu. Đối thủ và các "bóng ma" đều do máy điều khiển; không có thông tin nào về bạn được chia sẻ với người chơi khác.'],
+      ['Quyền truy cập', ['Internet và trạng thái mạng: để tải dữ liệu chặng và mua hàng.', 'Rung: rung khi trúng đòn, va chạm (tắt được trong Cài đặt).', 'Dịch vụ tải nền: để Google Play tải xong dữ liệu game.', 'Thanh toán: để mua gói Gem qua Google Play.']],
+      ['Lựa chọn của bạn', ['Tắt rung, đổi ngôn ngữ và đồ hoạ trong Cài đặt.', 'Xoá dữ liệu chặng đã tải trong Cài đặt → Dữ liệu chặng.', 'Chơi lại từ đầu trong Cài đặt → Xoá dữ liệu. Gỡ game sẽ xoá mọi dữ liệu lưu trên máy.', 'Lịch sử mua hàng nằm trong tài khoản Google Play của bạn, nơi bạn xem lại và yêu cầu hoàn tiền.']],
+      ['Trẻ em', 'Brass Throttle là game dành cho thanh thiếu niên và người lớn, có bạo lực hoạt hình, và không hướng tới trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng một em nhỏ đã cung cấp thông tin qua game, hãy liên hệ để chúng tôi giúp xoá.'],
+      ['Thay đổi chính sách', 'Nếu chính sách này thay đổi — ví dụ khi thêm tính năng mới có xử lý dữ liệu — chúng tôi sẽ cập nhật trang này và ngày ở đầu trang.'],
+      ['Liên hệ', 'Có câu hỏi về quyền riêng tư? Hãy viết cho chúng tôi tại <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  zh: {
+    name: '简体中文', lang: '语言', title: '隐私政策', updated: '最后更新：{date}',
+    intro: 'Brass Throttle 是 Keel Labs 出品的摩托车格斗竞速游戏。本政策说明游戏会处理哪些信息以及原因。简而言之：无需账号，没有广告，你的进度保存在你的设备上，购买由 Google Play 处理——我们永远看不到你的支付信息。',
+    s: [
+      ['保存在你设备上的数据', '游戏会保存你的进度（摩托车、升级、金币、Gems、已完成的关卡、Brawler Pass 奖励、外观装扮）、你的设置（语言、声音、振动、画质）以及 Gem 购买的订单号，以确保同一笔购买绝不会被重复计入。这些数据仅保存在你的设备上，不会发送给我们。',
+        '如果你的 Google 账号开启了 Android 备份，Android 可能会将这些游戏数据纳入设备备份，并在新设备上恢复。你可以在设备的备份设置中管理此功能。'],
+      ['赛道数据下载', '为了让安装包保持小巧，游戏会在安装后下载赛道内容（每个关卡的 3D 模型、纹理和音乐）：在你安装或更新游戏时通过 Google Play 下载；当你打开设备上尚未存在的关卡时，从我们的内容服务器下载。这些请求不包含任何账号、广告 ID 或游戏进度——只包含需要哪个文件。与任何网络服务器一样，我们的托管服务商可能会出于安全和运维目的保留标准技术日志（如 IP 地址、时间和用户代理）。下载使用加密连接，并且在使用移动数据下载大文件前，游戏会先征求你的同意。'],
+      ['应用内购买', '你可以在游戏内购买 Gem 礼包。支付完全由 Google Play 通过你的 Google 账号处理：我们永远不会收到你的姓名、电子邮箱、银行卡或其他支付信息。Google 会告知游戏购买了哪个礼包并提供一个订单号，游戏使用该订单号发放 Gems，并按上文所述将其保存在你的设备上。',
+        'Google 依据<a href="{gplay}">Google Payments 隐私声明</a>和<a href="{gpolicy}">Google 隐私权政策</a>处理你的支付信息。如需退款，请参阅<a href="{refund}">Google Play 退款政策</a>。'],
+      ['游戏引擎', 'Brass Throttle 使用 Unity 引擎开发，并通过 Unity In-App Purchasing 与 Google Play 通信。与大多数应用一样，这些组件可能会向 Unity Technologies 发送其运行所需的有限技术数据（如设备型号、操作系统和应用版本）。请参阅<a href="{unity}">Unity 游戏玩家和应用用户隐私政策</a>。'],
+      ['我们不收集的信息', '我们不会索取你的姓名、电子邮箱、通讯录、照片、麦克风或位置信息。游戏没有登录功能，没有广告，也没有我们自己的数据分析，我们绝不出售数据。对手和“幽灵”对手均由电脑控制；你的任何信息都不会与其他玩家共享。'],
+      ['权限', ['互联网和网络状态：用于下载赛道数据和进行购买。', '振动：用于击中和撞车反馈（可在设置中关闭）。', '后台下载服务：让 Google Play 能够完成游戏数据的下载。', '结算：用于通过 Google Play 购买 Gem 礼包。']],
+      ['你的选择', ['在设置中关闭振动、更改语言和画质。', '在“设置 → 赛道数据”中删除已下载的赛道数据。', '在“设置 → 清除数据”中重置所有进度。卸载游戏会删除你设备上保存的所有数据。', '你的购买记录保存在你的 Google Play 账号中，你可以在那里查看记录并申请退款。']],
+      ['儿童', 'Brass Throttle 是一款面向青少年和成年人的游戏，含有卡通暴力内容，不面向 13 岁以下的儿童。我们不会在知情的情况下收集儿童的个人信息。如果你认为有儿童通过游戏提供了信息，请联系我们，我们会协助删除。'],
+      ['本政策的变更', '如果本政策发生变更——例如我们新增了处理数据的功能——我们会更新本页面及顶部的日期。'],
+      ['联系我们', '对隐私有疑问？请发送邮件至 <a href="mailto:{email}">{email}</a>。'],
+    ],
+  },
+  ja: {
+    name: '日本語', lang: '言語', title: 'プライバシーポリシー', updated: '最終更新日：{date}',
+    intro: 'Brass Throttle は、Keel Labs が開発したバイクバトルレースゲームです。本ポリシーでは、ゲームが取り扱う情報とその理由をご説明します。要点は次のとおりです：アカウントは不要で広告もなく、進行状況はお使いの端末に保存され、購入は Google Play が処理します。当社がお客様の支払い情報を目にすることはありません。',
+    s: [
+      ['端末に保存されるデータ', 'ゲームは、進行状況（バイク、アップグレード、ゴールド、Gems、クリアしたステージ、Brawler Pass の報酬、外観アイテム）、設定（言語、サウンド、振動、グラフィック）、および Gem 購入の注文 ID を保存します。注文 ID は、同じ購入が二重に付与されないようにするためのものです。これらのデータはお使いの端末にのみ保存され、当社に送信されることはありません。',
+        'Google アカウントで Android のバックアップが有効になっている場合、Android がこのゲームデータを端末のバックアップに含め、新しい端末で復元することがあります。この設定は端末のバックアップ設定で管理できます。'],
+      ['コースデータのダウンロード', 'インストールサイズを小さく保つため、ゲームはインストール後にコースのコンテンツ（各ステージの 3D モデル、テクスチャ、音楽）をダウンロードします。ゲームのインストール時やアップデート時には Google Play を通じて、端末にまだないステージを開いたときには当社のコンテンツサーバーからダウンロードします。これらのリクエストには、アカウント、広告 ID、ゲームの進行状況は含まれず、必要なファイルの情報のみが含まれます。一般的なウェブサーバーと同様に、当社のホスティングプロバイダーは、セキュリティと運用のために標準的な技術ログ（IP アドレス、日時、ユーザーエージェントなど）を保持することがあります。ダウンロードには暗号化された接続を使用し、モバイルデータ通信で大きなファイルをダウンロードする前には、ゲームが確認を求めます。'],
+      ['アプリ内購入', 'ゲーム内で Gem パックを購入できます。支払いは、お客様の Google アカウントのもとで Google Play がすべて処理します。当社がお客様の氏名、メールアドレス、カード情報、その他の支払い情報を受け取ることはありません。Google はどのパックが購入されたかをゲームに通知し、注文 ID を提供します。ゲームはこの注文 ID を使って Gems を付与し、上記のとおり端末に保存します。',
+        'Google は、<a href="{gplay}">Google Payments プライバシー通知</a>および<a href="{gpolicy}">Google プライバシー ポリシー</a>に基づいてお客様の支払い情報を処理します。返金については、<a href="{refund}">Google Play の返金ポリシー</a>をご覧ください。'],
+      ['ゲームエンジン', 'Brass Throttle は Unity エンジンで開発されており、Google Play との通信に Unity In-App Purchasing を使用しています。多くのアプリと同様に、これらのコンポーネントは、動作に必要な限られた技術データ（端末のモデル、オペレーティングシステム、アプリのバージョンなど）を Unity Technologies に送信することがあります。詳しくは<a href="{unity}">Unity ゲームプレイヤーおよびアプリユーザー向けプライバシーポリシー</a>をご覧ください。'],
+      ['当社が収集しない情報', '当社は、お客様の氏名、メールアドレス、連絡先、写真、マイク、位置情報を求めません。ゲームにはサインイン機能も広告も独自の分析機能もなく、当社がデータを販売することは一切ありません。ライバルや「ゴースト」の対戦相手はコンピューターが操作しており、お客様に関する情報が他のプレイヤーと共有されることはありません。'],
+      ['権限', ['インターネットとネットワークの状態：コースデータのダウンロードと購入のため。', '振動：攻撃のヒットやクラッシュ時のフィードバックのため（設定でオフにできます）。', 'バックグラウンドダウンロードサービス：Google Play がゲームデータのダウンロードを完了できるようにするため。', '課金：Google Play を通じて Gem パックを購入するため。']],
+      ['お客様の選択', ['振動のオフ、言語やグラフィックの変更は、設定で行えます。', 'ダウンロードしたコースデータは、設定 → コースデータ で削除できます。', 'すべての進行状況は、設定 → データ消去 でリセットできます。ゲームをアンインストールすると、端末に保存されたすべてのデータが削除されます。', '購入履歴はお客様の Google Play アカウントに残り、そこで確認や返金リクエストができます。']],
+      ['お子様について', 'Brass Throttle はアニメ調の暴力表現を含む、10 代および大人向けのゲームであり、13 歳未満のお子様を対象としていません。当社は、お子様から個人情報を故意に収集することはありません。お子様がゲームを通じて情報を提供したと思われる場合は、当社までご連絡ください。削除のお手伝いをいたします。'],
+      ['本ポリシーの変更', '本ポリシーが変更される場合（たとえば、データを扱う新機能を追加した場合など）、当社はこのページと上部の日付を更新します。'],
+      ['お問い合わせ', 'プライバシーに関するご質問は、<a href="mailto:{email}">{email}</a> までお寄せください。'],
+    ],
+  },
+  ko: {
+    name: '한국어', lang: '언어', title: '개인정보처리방침', updated: '최종 업데이트: {date}',
+    intro: 'Brass Throttle은 Keel Labs가 만든 오토바이 전투 레이싱 게임입니다. 본 방침은 게임이 어떤 정보를 처리하며 그 이유가 무엇인지 설명합니다. 요약하면, 계정과 광고가 없고, 진행 상황은 기기에 저장되며, 구매는 Google Play가 처리합니다. 저희는 결제 정보를 절대 볼 수 없습니다.',
+    s: [
+      ['기기에 저장되는 정보', '게임은 진행 상황(오토바이, 업그레이드, 골드, Gems, 완료한 스테이지, Brawler Pass 보상, 꾸미기 아이템), 설정(언어, 사운드, 진동, 그래픽), 그리고 Gem 구매의 주문 ID를 저장하여 같은 구매가 두 번 지급되지 않도록 합니다. 이 데이터는 기기에만 저장되며 저희에게 전송되지 않습니다.',
+        'Google 계정에 Android 백업이 켜져 있으면 Android가 이 게임 데이터를 기기 백업에 포함하여 새 기기에서 복원할 수 있습니다. 이는 기기의 백업 설정에서 관리할 수 있습니다.'],
+      ['트랙 데이터 다운로드', '설치 용량을 작게 유지하기 위해 게임은 설치 후 트랙 콘텐츠(각 스테이지의 3D 모델, 텍스처, 음악)를 다운로드합니다. 게임을 설치하거나 업데이트할 때는 Google Play를 통해, 기기에 아직 없는 스테이지를 열 때는 저희 콘텐츠 서버에서 다운로드합니다. 이러한 요청에는 계정, 광고 ID, 게임 진행 상황이 포함되지 않으며, 어떤 파일이 필요한지만 포함됩니다. 다른 웹 서버와 마찬가지로 저희 호스팅 제공업체는 보안 및 운영을 위해 표준 기술 로그(IP 주소, 시간, 사용자 에이전트 등)를 보관할 수 있습니다. 다운로드에는 암호화된 연결이 사용되며, 모바일 데이터로 대용량 파일을 다운로드하기 전에는 게임이 먼저 확인을 요청합니다.'],
+      ['인앱 구매', '게임 안에서 Gem 팩을 구매할 수 있습니다. 결제는 전적으로 사용자의 Google 계정으로 Google Play가 처리합니다. 저희는 이름, 이메일, 카드 또는 기타 결제 정보를 절대 받지 않습니다. Google은 어떤 팩이 구매되었는지 게임에 알려 주고 주문 ID를 제공하며, 게임은 이를 사용해 Gems를 지급하고 위에서 설명한 대로 기기에 저장합니다.',
+        'Google은 <a href="{gplay}">Google Payments 개인정보처리방침</a> 및 <a href="{gpolicy}">Google 개인정보처리방침</a>에 따라 결제 정보를 처리합니다. 환불은 <a href="{refund}">Google Play 환불 정책</a>을 참고하세요.'],
+      ['게임 엔진', 'Brass Throttle은 Unity 엔진으로 제작되었으며 Google Play와 통신하기 위해 Unity In-App Purchasing을 사용합니다. 대부분의 앱과 마찬가지로 이러한 구성 요소는 작동에 필요한 제한된 기술 데이터(기기 모델, 운영체제, 앱 버전 등)를 Unity Technologies에 전송할 수 있습니다. <a href="{unity}">Unity 게임 플레이어 및 앱 사용자 개인정보처리방침</a>을 참고하세요.'],
+      ['수집하지 않는 정보', '저희는 이름, 이메일, 연락처, 사진, 마이크 또는 위치 정보를 요청하지 않습니다. 게임에는 로그인, 광고, 자체 분석 기능이 없으며, 저희는 데이터를 절대 판매하지 않습니다. 라이벌과 ‘고스트’ 상대는 컴퓨터가 조종하며, 사용자에 대한 어떤 정보도 다른 플레이어와 공유되지 않습니다.'],
+      ['권한', ['인터넷 및 네트워크 상태: 트랙 데이터를 다운로드하고 구매하기 위해 사용합니다.', '진동: 타격 및 충돌 피드백에 사용합니다(설정에서 끌 수 있음).', '백그라운드 다운로드 서비스: Google Play가 게임 데이터 다운로드를 완료할 수 있도록 사용합니다.', '결제: Google Play를 통해 Gem 팩을 구매하기 위해 사용합니다.']],
+      ['사용자의 선택', ['설정에서 진동을 끄고 언어와 그래픽을 변경할 수 있습니다.', '다운로드한 트랙 데이터는 설정 → 트랙 데이터에서 삭제할 수 있습니다.', '모든 진행 상황은 설정 → 데이터 삭제에서 초기화할 수 있습니다. 게임을 삭제하면 기기에 저장된 모든 데이터가 삭제됩니다.', '구매 내역은 Google Play 계정에 남아 있으며, 그곳에서 내역을 확인하고 환불을 요청할 수 있습니다.']],
+      ['아동', 'Brass Throttle은 만화풍 폭력 요소가 있는 청소년 및 성인용 게임이며, 13세 미만 아동을 대상으로 하지 않습니다. 저희는 아동의 개인정보를 고의로 수집하지 않습니다. 아동이 게임을 통해 정보를 제공했다고 생각되면 저희에게 연락해 주세요. 삭제를 도와드리겠습니다.'],
+      ['방침 변경', '본 방침이 변경되는 경우(예: 데이터를 처리하는 새로운 기능을 추가하는 경우) 이 페이지와 상단의 날짜를 업데이트합니다.'],
+      ['문의', '개인정보 관련 문의는 <a href="mailto:{email}">{email}</a>로 보내 주세요.'],
+    ],
+  },
+  es: {
+    name: 'Español', lang: 'Idioma', title: 'Política de privacidad', updated: 'Última actualización: {date}',
+    intro: 'Brass Throttle es un juego de carreras de motos con combate de Keel Labs. Esta política explica qué información maneja el juego y por qué. En resumen: no hay cuenta ni publicidad, tu progreso se queda en tu dispositivo y las compras las procesa Google Play; nunca vemos tus datos de pago.',
+    s: [
+      ['Lo que se queda en tu dispositivo', 'El juego guarda tu progreso (motos, mejoras, Oro, Gems, etapas completadas, recompensas del Brawler Pass, artículos cosméticos), tus ajustes (idioma, sonido, vibración, gráficos) y los ID de pedido de las compras de Gems, para que la misma compra nunca se acredite dos veces. Estos datos se guardan solo en tu dispositivo y no se nos envían.',
+        'Si tienes activada la copia de seguridad de Android en tu cuenta de Google, Android puede incluir estos datos del juego en la copia de seguridad de tu dispositivo y restaurarlos en un dispositivo nuevo. Puedes gestionarlo en los ajustes de copia de seguridad de tu dispositivo.'],
+      ['Descarga de datos de pista', 'Para que la instalación ocupe poco, el juego descarga el contenido de las pistas (modelos 3D, texturas y música de cada etapa) después de instalarse: a través de Google Play cuando instalas o actualizas el juego, y desde nuestro servidor de contenido cuando abres una etapa que aún no está en tu dispositivo. Estas solicitudes no contienen ninguna cuenta, ID de publicidad ni progreso del juego; solo indican qué archivo se necesita. Como cualquier servidor web, nuestro proveedor de alojamiento puede conservar registros técnicos estándar (como la dirección IP, la hora y el agente de usuario) por motivos de seguridad y operación. Las descargas usan conexiones cifradas, y el juego te pregunta antes de descargar archivos grandes con datos móviles.'],
+      ['Compras dentro de la aplicación', 'Puedes comprar packs de Gems dentro del juego. Los pagos los gestiona por completo Google Play con tu cuenta de Google: nunca recibimos tu nombre, correo electrónico, tarjeta ni otros datos de pago. Google indica al juego qué pack se compró y le da un ID de pedido, que el juego usa para añadir las Gems y guarda en tu dispositivo como se describe arriba.',
+        'Google trata tu información de pago según el <a href="{gplay}">Aviso de privacidad de Google Payments</a> y la <a href="{gpolicy}">Política de privacidad de Google</a>. Para reembolsos, consulta la <a href="{refund}">política de reembolsos de Google Play</a>.'],
+      ['Motor del juego', 'Brass Throttle está hecho con el motor Unity y usa Unity In-App Purchasing para comunicarse con Google Play. Como la mayoría de las aplicaciones, estos componentes pueden enviar a Unity Technologies datos técnicos limitados necesarios para funcionar (como el modelo del dispositivo, el sistema operativo y la versión de la aplicación). Consulta la <a href="{unity}">Política de privacidad de Unity para jugadores y usuarios de aplicaciones</a>.'],
+      ['Lo que no recopilamos', 'No te pedimos tu nombre, correo electrónico, contactos, fotos, micrófono ni ubicación. El juego no tiene inicio de sesión, ni publicidad, ni analíticas propias, y nunca vendemos datos. Los rivales y los oponentes “fantasma” los controla el ordenador; no se comparte nada sobre ti con otros jugadores.'],
+      ['Permisos', ['Internet y estado de la red: para descargar datos de pista y hacer compras.', 'Vibración: para la respuesta al golpear y al chocar (se puede desactivar en Ajustes).', 'Servicio de descarga en segundo plano: para que Google Play pueda terminar de descargar los datos del juego.', 'Facturación: para comprar packs de Gems a través de Google Play.']],
+      ['Tus opciones', ['Desactiva la vibración y cambia el idioma y los gráficos en Ajustes.', 'Elimina los datos de pista descargados en Ajustes → Datos de pista.', 'Restablece todo el progreso en Ajustes → Borrar datos. Desinstalar el juego elimina todo lo guardado en tu dispositivo.', 'Tu historial de compras se queda en tu cuenta de Google Play, donde puedes consultarlo y solicitar reembolsos.']],
+      ['Menores', 'Brass Throttle es un juego para adolescentes y adultos con violencia de dibujos animados, y no está dirigido a menores de 13 años. No recopilamos a sabiendas información personal de menores. Si crees que un menor ha proporcionado información a través del juego, contáctanos y te ayudaremos a eliminarla.'],
+      ['Cambios en esta política', 'Si esta política cambia —por ejemplo, si añadimos nuevas funciones que manejen datos—, actualizaremos esta página y la fecha de la parte superior.'],
+      ['Contacto', '¿Tienes preguntas sobre privacidad? Escríbenos a <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  pt: {
+    name: 'Português', lang: 'Idioma', title: 'Política de Privacidade', updated: 'Última atualização: {date}',
+    intro: 'Brass Throttle é um jogo de corrida de motos com combate da Keel Labs. Esta política explica quais informações o jogo trata e por quê. Resumindo: não há conta nem anúncios, seu progresso fica no seu dispositivo e as compras são processadas pelo Google Play — nunca vemos seus dados de pagamento.',
+    s: [
+      ['O que fica no seu dispositivo', 'O jogo salva seu progresso (motos, melhorias, Ouro, Gems, etapas concluídas, recompensas do Brawler Pass, itens cosméticos), suas configurações (idioma, som, vibração, gráficos) e os IDs de pedido das compras de Gems, para que a mesma compra nunca seja creditada duas vezes. Esses dados ficam armazenados apenas no seu dispositivo e não são enviados para nós.',
+        'Se o backup do Android estiver ativado na sua Conta do Google, o Android pode incluir esses dados do jogo no backup do seu dispositivo e restaurá-los em um novo dispositivo. Você pode gerenciar isso nas configurações de backup do seu dispositivo.'],
+      ['Download de dados da pista', 'Para manter a instalação pequena, o jogo baixa o conteúdo das pistas (modelos 3D, texturas e músicas de cada etapa) depois da instalação: pelo Google Play quando você instala ou atualiza o jogo, e pelo nosso servidor de conteúdo quando você abre uma etapa que ainda não está no seu dispositivo. Essas solicitações não contêm conta, ID de publicidade nem progresso do jogo — apenas qual arquivo é necessário. Como qualquer servidor web, nosso provedor de hospedagem pode manter registros técnicos padrão (como endereço IP, horário e user agent) para segurança e operação. Os downloads usam conexões criptografadas, e o jogo pergunta antes de baixar arquivos grandes usando dados móveis.'],
+      ['Compras no app', 'Você pode comprar pacotes de Gems dentro do jogo. Os pagamentos são processados inteiramente pelo Google Play com a sua Conta do Google: nunca recebemos seu nome, e-mail, cartão ou outros dados de pagamento. O Google informa ao jogo qual pacote foi comprado e fornece um ID de pedido, que o jogo usa para adicionar as Gems e armazena no seu dispositivo, conforme descrito acima.',
+        'O Google trata suas informações de pagamento de acordo com o <a href="{gplay}">Aviso de Privacidade do Google Payments</a> e a <a href="{gpolicy}">Política de Privacidade do Google</a>. Para reembolsos, consulte a <a href="{refund}">política de reembolso do Google Play</a>.'],
+      ['Motor do jogo', 'Brass Throttle é feito com o motor Unity e usa o Unity In-App Purchasing para se comunicar com o Google Play. Como a maioria dos apps, esses componentes podem enviar à Unity Technologies dados técnicos limitados necessários para funcionar (como modelo do dispositivo, sistema operacional e versão do app). Consulte a <a href="{unity}">Política de Privacidade da Unity para Jogadores e Usuários de Apps</a>.'],
+      ['O que não coletamos', 'Não pedimos seu nome, e-mail, contatos, fotos, microfone ou localização. O jogo não tem login, não tem anúncios nem análises próprias, e nunca vendemos dados. Os rivais e os oponentes “fantasma” são controlados pelo computador; nada sobre você é compartilhado com outros jogadores.'],
+      ['Permissões', ['Internet e estado da rede: para baixar dados da pista e fazer compras.', 'Vibração: para o retorno de golpes e batidas (pode ser desativada em Configurações).', 'Serviço de download em segundo plano: para que o Google Play possa concluir o download dos dados do jogo.', 'Faturamento: para comprar pacotes de Gems pelo Google Play.']],
+      ['Suas escolhas', ['Desative a vibração e altere o idioma e os gráficos em Configurações.', 'Exclua os dados da pista baixados em Configurações → Dados da pista.', 'Redefina todo o progresso em Configurações → Apagar dados. Desinstalar o jogo exclui tudo o que está armazenado no seu dispositivo.', 'Seu histórico de compras fica na sua conta do Google Play, onde você pode consultá-lo e solicitar reembolsos.']],
+      ['Crianças', 'Brass Throttle é um jogo para adolescentes e adultos com violência de desenho animado e não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que uma criança forneceu informações por meio do jogo, entre em contato conosco e ajudaremos a removê-las.'],
+      ['Alterações nesta política', 'Se esta política mudar — por exemplo, se adicionarmos novos recursos que tratem dados — atualizaremos esta página e a data no topo.'],
+      ['Contato', 'Dúvidas sobre privacidade? Escreva para <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  fr: {
+    name: 'Français', lang: 'Langue', title: 'Politique de confidentialité', updated: 'Dernière mise à jour : {date}',
+    intro: 'Brass Throttle est un jeu de course de moto et de combat développé par Keel Labs. Cette politique explique quelles informations le jeu traite et pourquoi. En bref : pas de compte ni de publicité, votre progression reste sur votre appareil et les achats sont traités par Google Play — nous ne voyons jamais vos informations de paiement.',
+    s: [
+      ['Ce qui reste sur votre appareil', 'Le jeu enregistre votre progression (motos, améliorations, Or, Gems, étapes terminées, récompenses du Brawler Pass, éléments cosmétiques), vos paramètres (langue, son, vibration, graphismes) et les identifiants de commande des achats de Gems, afin qu’un même achat ne soit jamais crédité deux fois. Ces données sont stockées uniquement sur votre appareil et ne nous sont pas envoyées.',
+        'Si la sauvegarde Android est activée pour votre compte Google, Android peut inclure ces données de jeu dans la sauvegarde de votre appareil et les restaurer sur un nouvel appareil. Vous pouvez gérer cela dans les paramètres de sauvegarde de votre appareil.'],
+      ['Téléchargement des données de piste', 'Pour que l’installation reste légère, le jeu télécharge le contenu des pistes (modèles 3D, textures et musique de chaque étape) après l’installation : via Google Play lorsque vous installez ou mettez à jour le jeu, et depuis notre serveur de contenu lorsque vous ouvrez une étape qui n’est pas encore sur votre appareil. Ces requêtes ne contiennent aucun compte, identifiant publicitaire ni progression de jeu — seulement le fichier nécessaire. Comme pour tout serveur web, notre hébergeur peut conserver des journaux techniques standard (tels que l’adresse IP, l’heure et l’agent utilisateur) à des fins de sécurité et d’exploitation. Les téléchargements utilisent des connexions chiffrées, et le jeu vous demande votre accord avant de télécharger des fichiers volumineux via les données mobiles.'],
+      ['Achats intégrés', 'Vous pouvez acheter des packs de Gems dans le jeu. Les paiements sont entièrement gérés par Google Play avec votre compte Google : nous ne recevons jamais votre nom, votre adresse e-mail, votre carte ni aucune autre information de paiement. Google indique au jeu quel pack a été acheté et fournit un identifiant de commande, que le jeu utilise pour ajouter les Gems et qu’il stocke sur votre appareil comme décrit ci-dessus.',
+        'Google traite vos informations de paiement conformément à l’<a href="{gplay}">Avis de confidentialité de Google Payments</a> et aux <a href="{gpolicy}">Règles de confidentialité de Google</a>. Pour les remboursements, consultez la <a href="{refund}">politique de remboursement de Google Play</a>.'],
+      ['Moteur de jeu', 'Brass Throttle est développé avec le moteur Unity et utilise Unity In-App Purchasing pour communiquer avec Google Play. Comme la plupart des applications, ces composants peuvent envoyer à Unity Technologies des données techniques limitées nécessaires à leur fonctionnement (comme le modèle de l’appareil, le système d’exploitation et la version de l’application). Consultez la <a href="{unity}">Politique de confidentialité de Unity pour les joueurs et les utilisateurs d’applications</a>.'],
+      ['Ce que nous ne collectons pas', 'Nous ne vous demandons ni votre nom, ni votre adresse e-mail, ni vos contacts, photos, microphone ou position. Le jeu n’a pas de connexion, pas de publicité et pas d’outil d’analyse qui lui soit propre, et nous ne vendons jamais de données. Les rivaux et les adversaires « fantômes » sont contrôlés par l’ordinateur ; aucune information vous concernant n’est partagée avec d’autres joueurs.'],
+      ['Autorisations', ['Internet et état du réseau : pour télécharger les données de piste et effectuer des achats.', 'Vibration : pour le retour lors des coups et des chutes (désactivable dans Paramètres).', 'Service de téléchargement en arrière-plan : pour que Google Play puisse terminer le téléchargement des données du jeu.', 'Facturation : pour acheter des packs de Gems via Google Play.']],
+      ['Vos choix', ['Désactivez la vibration, changez la langue et les graphismes dans Paramètres.', 'Supprimez les données de piste téléchargées dans Paramètres → Données de piste.', 'Réinitialisez toute votre progression dans Paramètres → Effacer les données. Désinstaller le jeu supprime tout ce qui est stocké sur votre appareil.', 'Votre historique d’achats reste dans votre compte Google Play, où vous pouvez le consulter et demander des remboursements.']],
+      ['Enfants', 'Brass Throttle est un jeu destiné aux adolescents et aux adultes, comportant de la violence de type dessin animé, et il ne s’adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants. Si vous pensez qu’un enfant a fourni des informations via le jeu, contactez-nous et nous vous aiderons à les supprimer.'],
+      ['Modifications de cette politique', 'Si cette politique change — par exemple si nous ajoutons de nouvelles fonctionnalités qui traitent des données — nous mettrons à jour cette page et la date indiquée en haut.'],
+      ['Contact', 'Des questions sur la confidentialité ? Écrivez-nous à <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  de: {
+    name: 'Deutsch', lang: 'Sprache', title: 'Datenschutzerklärung', updated: 'Zuletzt aktualisiert am {date}',
+    intro: 'Brass Throttle ist ein Motorrad-Kampfrennspiel von Keel Labs. Diese Erklärung beschreibt, welche Informationen das Spiel verarbeitet und warum. Kurz gesagt: Es gibt kein Konto und keine Werbung, dein Fortschritt bleibt auf deinem Gerät und Käufe werden von Google Play abgewickelt – deine Zahlungsdaten sehen wir nie.',
+    s: [
+      ['Was auf deinem Gerät bleibt', 'Das Spiel speichert deinen Fortschritt (Motorräder, Upgrades, Gold, Gems, abgeschlossene Etappen, Brawler-Pass-Belohnungen, kosmetische Gegenstände), deine Einstellungen (Sprache, Ton, Vibration, Grafik) und die Bestell-IDs von Gem-Käufen, damit derselbe Kauf nie doppelt gutgeschrieben wird. Diese Daten werden nur auf deinem Gerät gespeichert und nicht an uns gesendet.',
+        'Wenn die Android-Sicherung für dein Google-Konto aktiviert ist, kann Android diese Spieldaten in die Sicherung deines Geräts aufnehmen und auf einem neuen Gerät wiederherstellen. Das kannst du in den Sicherungseinstellungen deines Geräts verwalten.'],
+      ['Download der Streckendaten', 'Damit die Installation klein bleibt, lädt das Spiel die Streckeninhalte (3D-Modelle, Texturen und Musik für jede Etappe) nach der Installation herunter: über Google Play, wenn du das Spiel installierst oder aktualisierst, und von unserem Content-Server, wenn du eine Etappe öffnest, die noch nicht auf deinem Gerät ist. Diese Anfragen enthalten kein Konto, keine Werbe-ID und keinen Spielfortschritt – nur, welche Datei benötigt wird. Wie bei jedem Webserver kann unser Hosting-Anbieter übliche technische Protokolle (etwa IP-Adresse, Uhrzeit und User-Agent) für Sicherheit und Betrieb aufbewahren. Downloads nutzen verschlüsselte Verbindungen, und das Spiel fragt nach, bevor große Dateien über mobile Daten heruntergeladen werden.'],
+      ['In-App-Käufe', 'Du kannst im Spiel Gem-Pakete kaufen. Die Zahlungen wickelt vollständig Google Play über dein Google-Konto ab: Wir erhalten nie deinen Namen, deine E-Mail-Adresse, Karte oder andere Zahlungsdaten. Google teilt dem Spiel mit, welches Paket gekauft wurde, und übermittelt eine Bestell-ID, mit der das Spiel die Gems gutschreibt und die es wie oben beschrieben auf deinem Gerät speichert.',
+        'Google verarbeitet deine Zahlungsinformationen gemäß der <a href="{gplay}">Datenschutzerklärung für Google Payments</a> und der <a href="{gpolicy}">Datenschutzerklärung von Google</a>. Informationen zu Erstattungen findest du in den <a href="{refund}">Erstattungsrichtlinien von Google Play</a>.'],
+      ['Spiel-Engine', 'Brass Throttle wurde mit der Unity-Engine entwickelt und nutzt Unity In-App Purchasing, um mit Google Play zu kommunizieren. Wie bei den meisten Apps können diese Komponenten begrenzte technische Daten, die für ihre Funktion nötig sind (etwa Gerätemodell, Betriebssystem und App-Version), an Unity Technologies senden. Siehe die <a href="{unity}">Datenschutzerklärung von Unity für Spieler und App-Nutzer</a>.'],
+      ['Was wir nicht erfassen', 'Wir fragen nicht nach deinem Namen, deiner E-Mail-Adresse, deinen Kontakten, Fotos, deinem Mikrofon oder Standort. Das Spiel hat keine Anmeldung, keine Werbung und keine eigene Analyse, und wir verkaufen niemals Daten. Rivalen und „Geister“-Gegner werden vom Computer gesteuert; nichts über dich wird mit anderen Spielern geteilt.'],
+      ['Berechtigungen', ['Internet und Netzwerkstatus: zum Herunterladen von Streckendaten und für Käufe.', 'Vibration: für Feedback bei Treffern und Stürzen (in den Einstellungen abschaltbar).', 'Hintergrund-Downloaddienst: damit Google Play das Herunterladen der Spieldaten abschließen kann.', 'Abrechnung: zum Kauf von Gem-Paketen über Google Play.']],
+      ['Deine Wahlmöglichkeiten', ['Schalte die Vibration aus und ändere Sprache und Grafik in den Einstellungen.', 'Lösche heruntergeladene Streckendaten unter Einstellungen → Streckendaten.', 'Setze deinen gesamten Fortschritt unter Einstellungen → Daten löschen zurück. Wenn du das Spiel deinstallierst, wird alles gelöscht, was auf deinem Gerät gespeichert ist.', 'Dein Kaufverlauf bleibt in deinem Google-Play-Konto, wo du ihn einsehen und Erstattungen beantragen kannst.']],
+      ['Kinder', 'Brass Throttle ist ein Spiel für Jugendliche und Erwachsene mit Comic-Gewalt und richtet sich nicht an Kinder unter 13 Jahren. Wir erfassen nicht wissentlich personenbezogene Daten von Kindern. Wenn du glaubst, dass ein Kind über das Spiel Informationen bereitgestellt hat, kontaktiere uns, und wir helfen, sie zu entfernen.'],
+      ['Änderungen dieser Erklärung', 'Wenn sich diese Erklärung ändert – zum Beispiel, wenn wir neue Funktionen hinzufügen, die Daten verarbeiten –, aktualisieren wir diese Seite und das Datum oben.'],
+      ['Kontakt', 'Fragen zum Datenschutz? Schreib uns an <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  ru: {
+    name: 'Русский', lang: 'Язык', title: 'Политика конфиденциальности', updated: 'Последнее обновление: {date}',
+    intro: 'Brass Throttle — мотоциклетная гоночная игра с боями от Keel Labs. В этой политике объясняется, какую информацию обрабатывает игра и зачем. Коротко: нет аккаунта и рекламы, ваш прогресс хранится на вашем устройстве, а покупки обрабатывает Google Play — мы никогда не видим ваши платёжные данные.',
+    s: [
+      ['Что хранится на вашем устройстве', 'Игра сохраняет ваш прогресс (мотоциклы, улучшения, Золото, Gems, пройденные этапы, награды Brawler Pass, косметические предметы), ваши настройки (язык, звук, вибрация, графика) и идентификаторы заказов при покупке Gems, чтобы одна и та же покупка никогда не была зачислена дважды. Эти данные хранятся только на вашем устройстве и не отправляются нам.',
+        'Если для вашего аккаунта Google включено резервное копирование Android, Android может включить эти игровые данные в резервную копию устройства и восстановить их на новом устройстве. Управлять этим можно в настройках резервного копирования устройства.'],
+      ['Загрузка данных трасс', 'Чтобы установочный файл был небольшим, игра загружает контент трасс (3D-модели, текстуры и музыку для каждого этапа) после установки: через Google Play при установке или обновлении игры и с нашего контент-сервера, когда вы открываете этап, которого ещё нет на устройстве. Эти запросы не содержат ни аккаунта, ни рекламного идентификатора, ни игрового прогресса — только то, какой файл нужен. Как и любой веб-сервер, наш хостинг-провайдер может хранить стандартные технические журналы (например, IP-адрес, время и user agent) в целях безопасности и обслуживания. Загрузки используют зашифрованные соединения, а перед загрузкой больших файлов через мобильный интернет игра спрашивает вашего согласия.'],
+      ['Покупки в приложении', 'В игре можно купить наборы Gems. Платежи полностью обрабатывает Google Play через ваш аккаунт Google: мы никогда не получаем ваше имя, адрес электронной почты, данные карты или другую платёжную информацию. Google сообщает игре, какой набор был куплен, и передаёт идентификатор заказа, который игра использует для зачисления Gems и сохраняет на вашем устройстве, как описано выше.',
+        'Google обрабатывает вашу платёжную информацию в соответствии с <a href="{gplay}">Уведомлением о конфиденциальности Google Payments</a> и <a href="{gpolicy}">Политикой конфиденциальности Google</a>. О возврате средств см. <a href="{refund}">правила возврата Google Play</a>.'],
+      ['Игровой движок', 'Brass Throttle создана на движке Unity и использует Unity In-App Purchasing для связи с Google Play. Как и в большинстве приложений, эти компоненты могут отправлять в Unity Technologies ограниченные технические данные, необходимые для работы (например, модель устройства, операционную систему и версию приложения). См. <a href="{unity}">Политику конфиденциальности Unity для игроков и пользователей приложений</a>.'],
+      ['Что мы не собираем', 'Мы не запрашиваем ваше имя, адрес электронной почты, контакты, фотографии, доступ к микрофону или местоположению. В игре нет входа в аккаунт, рекламы и собственной аналитики, и мы никогда не продаём данные. Соперники и «призрачные» противники управляются компьютером; никакие сведения о вас не передаются другим игрокам.'],
+      ['Разрешения', ['Интернет и состояние сети: для загрузки данных трасс и совершения покупок.', 'Вибрация: для отклика при ударах и авариях (можно отключить в настройках).', 'Служба фоновой загрузки: чтобы Google Play мог завершить загрузку игровых данных.', 'Платежи: для покупки наборов Gems через Google Play.']],
+      ['Ваш выбор', ['Отключайте вибрацию, меняйте язык и графику в настройках.', 'Удаляйте загруженные данные трасс в разделе Настройки → Данные трасс.', 'Сбрасывайте весь прогресс в разделе Настройки → Стереть данные. При удалении игры удаляется всё, что хранится на вашем устройстве.', 'История покупок остаётся в вашем аккаунте Google Play, где вы можете её просмотреть и запросить возврат средств.']],
+      ['Дети', 'Brass Throttle — игра для подростков и взрослых с мультяшным насилием, и она не предназначена для детей младше 13 лет. Мы сознательно не собираем личную информацию детей. Если вы считаете, что ребёнок предоставил информацию через игру, свяжитесь с нами, и мы поможем её удалить.'],
+      ['Изменения политики', 'Если эта политика изменится — например, если мы добавим новые функции, обрабатывающие данные, — мы обновим эту страницу и дату вверху.'],
+      ['Контакты', 'Вопросы о конфиденциальности? Пишите нам на <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  id: {
+    name: 'Bahasa Indonesia', lang: 'Bahasa', title: 'Kebijakan Privasi', updated: 'Terakhir diperbarui {date}',
+    intro: 'Brass Throttle adalah game balap motor penuh pertarungan buatan Keel Labs. Kebijakan ini menjelaskan informasi apa saja yang ditangani game dan alasannya. Singkatnya: tidak ada akun dan tidak ada iklan, progres kamu tetap di perangkat kamu, dan pembelian diproses oleh Google Play — kami tidak pernah melihat detail pembayaran kamu.',
+    s: [
+      ['Yang tetap di perangkat kamu', 'Game menyimpan progres kamu (motor, upgrade, Emas, Gems, tahap yang sudah diselesaikan, hadiah Brawler Pass, item kosmetik), pengaturan kamu (bahasa, suara, getaran, grafis), dan ID pesanan dari pembelian Gem, sehingga pembelian yang sama tidak pernah dikreditkan dua kali. Data ini hanya disimpan di perangkat kamu dan tidak dikirim kepada kami.',
+        'Jika pencadangan Android diaktifkan untuk akun Google kamu, Android dapat menyertakan data game ini dalam cadangan perangkat dan memulihkannya di perangkat baru. Kamu dapat mengelolanya di pengaturan pencadangan perangkat.'],
+      ['Unduhan data lintasan', 'Agar ukuran instalasi tetap kecil, game mengunduh konten lintasan (model 3D, tekstur, dan musik untuk setiap tahap) setelah diinstal: melalui Google Play saat kamu menginstal atau memperbarui game, dan dari server konten kami saat kamu membuka tahap yang belum ada di perangkat. Permintaan ini tidak berisi akun, ID iklan, maupun progres game — hanya file mana yang dibutuhkan. Seperti server web lainnya, penyedia hosting kami dapat menyimpan log teknis standar (seperti alamat IP, waktu, dan user agent) untuk keamanan dan operasional. Unduhan menggunakan koneksi terenkripsi, dan game akan bertanya terlebih dahulu sebelum mengunduh file besar melalui data seluler.'],
+      ['Pembelian dalam aplikasi', 'Kamu dapat membeli paket Gem di dalam game. Pembayaran sepenuhnya ditangani oleh Google Play dengan akun Google kamu: kami tidak pernah menerima nama, email, kartu, atau detail pembayaran lain milikmu. Google memberi tahu game paket mana yang dibeli dan memberikan ID pesanan, yang digunakan game untuk menambahkan Gems dan disimpan di perangkat kamu seperti dijelaskan di atas.',
+        'Google memproses informasi pembayaran kamu berdasarkan <a href="{gplay}">Pemberitahuan Privasi Google Payments</a> dan <a href="{gpolicy}">Kebijakan Privasi Google</a>. Untuk pengembalian dana, lihat <a href="{refund}">kebijakan pengembalian dana Google Play</a>.'],
+      ['Mesin game', 'Brass Throttle dibuat dengan mesin Unity dan menggunakan Unity In-App Purchasing untuk berkomunikasi dengan Google Play. Seperti kebanyakan aplikasi, komponen ini dapat mengirimkan data teknis terbatas yang diperlukan agar berfungsi (seperti model perangkat, sistem operasi, dan versi aplikasi) kepada Unity Technologies. Lihat <a href="{unity}">Kebijakan Privasi Unity untuk Pemain Game dan Pengguna Aplikasi</a>.'],
+      ['Yang tidak kami kumpulkan', 'Kami tidak meminta nama, email, kontak, foto, mikrofon, atau lokasi kamu. Game ini tidak memiliki fitur masuk akun, tidak ada iklan, dan tidak ada analitik sendiri, dan kami tidak pernah menjual data. Rival dan lawan “hantu” dikendalikan komputer; tidak ada informasi tentang kamu yang dibagikan kepada pemain lain.'],
+      ['Izin', ['Internet dan status jaringan: untuk mengunduh data lintasan dan melakukan pembelian.', 'Getaran: untuk umpan balik saat memukul dan menabrak (dapat dimatikan di Pengaturan).', 'Layanan unduhan latar belakang: agar Google Play dapat menyelesaikan pengunduhan data game.', 'Penagihan: untuk membeli paket Gem melalui Google Play.']],
+      ['Pilihan kamu', ['Matikan getaran, ubah bahasa dan grafis di Pengaturan.', 'Hapus data lintasan yang sudah diunduh di Pengaturan → Data lintasan.', 'Atur ulang semua progres di Pengaturan → Hapus data. Menghapus instalan game akan menghapus semua yang tersimpan di perangkat kamu.', 'Riwayat pembelian kamu tetap ada di akun Google Play kamu, tempat kamu dapat melihatnya dan meminta pengembalian dana.']],
+      ['Anak-anak', 'Brass Throttle adalah game untuk remaja dan dewasa yang mengandung kekerasan kartun, dan tidak ditujukan untuk anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak. Jika kamu yakin seorang anak telah memberikan informasi melalui game, hubungi kami dan kami akan membantu menghapusnya.'],
+      ['Perubahan kebijakan ini', 'Jika kebijakan ini berubah — misalnya jika kami menambahkan fitur baru yang menangani data — kami akan memperbarui halaman ini dan tanggal di bagian atas.'],
+      ['Kontak', 'Ada pertanyaan tentang privasi? Kirim email ke <a href="mailto:{email}">{email}</a>.'],
+    ],
+  },
+  th: {
+    name: 'ไทย', lang: 'ภาษา', title: 'นโยบายความเป็นส่วนตัว', updated: 'อัปเดตล่าสุด {date}',
+    intro: 'Brass Throttle เป็นเกมแข่งมอเตอร์ไซค์แนวต่อสู้จาก Keel Labs นโยบายนี้อธิบายว่าเกมจัดการข้อมูลใดบ้างและเพราะเหตุใด โดยสรุปคือ ไม่มีบัญชี ไม่มีโฆษณา ความคืบหน้าของคุณอยู่บนอุปกรณ์ของคุณ และการซื้อดำเนินการโดย Google Play — เราไม่เคยเห็นรายละเอียดการชำระเงินของคุณ',
+    s: [
+      ['ข้อมูลที่อยู่บนอุปกรณ์ของคุณ', 'เกมจะบันทึกความคืบหน้าของคุณ (รถมอเตอร์ไซค์ การอัปเกรด ทอง, Gems ด่านที่ผ่านแล้ว รางวัล Brawler Pass ไอเทมตกแต่ง) การตั้งค่าของคุณ (ภาษา เสียง การสั่น กราฟิก) และหมายเลขคำสั่งซื้อของการซื้อ Gem เพื่อไม่ให้การซื้อเดียวกันถูกเติมให้สองครั้ง ข้อมูลนี้จัดเก็บไว้บนอุปกรณ์ของคุณเท่านั้นและไม่ได้ส่งมาให้เรา',
+        'หากเปิดการสำรองข้อมูล Android ไว้สำหรับบัญชี Google ของคุณ Android อาจรวมข้อมูลเกมนี้ไว้ในข้อมูลสำรองของอุปกรณ์และกู้คืนบนอุปกรณ์เครื่องใหม่ คุณจัดการเรื่องนี้ได้ในการตั้งค่าการสำรองข้อมูลของอุปกรณ์'],
+      ['การดาวน์โหลดข้อมูลสนาม', 'เพื่อให้ขนาดการติดตั้งเล็ก เกมจะดาวน์โหลดเนื้อหาของสนาม (โมเดล 3D เท็กซ์เจอร์ และเพลงของแต่ละด่าน) หลังการติดตั้ง โดยดาวน์โหลดผ่าน Google Play เมื่อคุณติดตั้งหรืออัปเดตเกม และจากเซิร์ฟเวอร์เนื้อหาของเราเมื่อคุณเปิดด่านที่ยังไม่มีบนอุปกรณ์ คำขอเหล่านี้ไม่มีบัญชี รหัสโฆษณา หรือความคืบหน้าในเกม — มีเพียงข้อมูลว่าต้องการไฟล์ใด เช่นเดียวกับเว็บเซิร์ฟเวอร์ทั่วไป ผู้ให้บริการโฮสติ้งของเราอาจเก็บบันทึกทางเทคนิคมาตรฐาน (เช่น ที่อยู่ IP เวลา และ user agent) เพื่อความปลอดภัยและการดำเนินงาน การดาวน์โหลดใช้การเชื่อมต่อที่เข้ารหัส และเกมจะถามก่อนดาวน์โหลดไฟล์ขนาดใหญ่ผ่านเน็ตมือถือ'],
+      ['การซื้อในแอป', 'คุณสามารถซื้อแพ็ก Gem ได้ในเกม การชำระเงินดำเนินการโดย Google Play ทั้งหมดภายใต้บัญชี Google ของคุณ เราไม่เคยได้รับชื่อ อีเมล บัตร หรือรายละเอียดการชำระเงินอื่นๆ ของคุณ Google จะแจ้งเกมว่ามีการซื้อแพ็กใดและให้หมายเลขคำสั่งซื้อ ซึ่งเกมใช้เพื่อเพิ่ม Gems และจัดเก็บไว้บนอุปกรณ์ของคุณตามที่อธิบายไว้ข้างต้น',
+        'Google ประมวลผลข้อมูลการชำระเงินของคุณภายใต้<a href="{gplay}">ประกาศเกี่ยวกับความเป็นส่วนตัวของ Google Payments</a> และ<a href="{gpolicy}">นโยบายความเป็นส่วนตัวของ Google</a> สำหรับการคืนเงิน โปรดดู<a href="{refund}">นโยบายการคืนเงินของ Google Play</a>'],
+      ['เอนจินเกม', 'Brass Throttle สร้างด้วยเอนจิน Unity และใช้ Unity In-App Purchasing เพื่อสื่อสารกับ Google Play เช่นเดียวกับแอปส่วนใหญ่ คอมโพเนนต์เหล่านี้อาจส่งข้อมูลทางเทคนิคที่จำกัดซึ่งจำเป็นต่อการทำงาน (เช่น รุ่นอุปกรณ์ ระบบปฏิบัติการ และเวอร์ชันแอป) ให้แก่ Unity Technologies ดู<a href="{unity}">นโยบายความเป็นส่วนตัวของ Unity สำหรับผู้เล่นเกมและผู้ใช้แอป</a>'],
+      ['สิ่งที่เราไม่เก็บรวบรวม', 'เราไม่ขอชื่อ อีเมล รายชื่อติดต่อ รูปภาพ ไมโครโฟน หรือตำแหน่งของคุณ เกมไม่มีการลงชื่อเข้าใช้ ไม่มีโฆษณา และไม่มีระบบวิเคราะห์ของตัวเอง และเราไม่เคยขายข้อมูล คู่แข่งและคู่ต่อสู้ “ผี” ถูกควบคุมโดยคอมพิวเตอร์ ไม่มีข้อมูลใดเกี่ยวกับคุณถูกแชร์กับผู้เล่นคนอื่น'],
+      ['สิทธิ์การเข้าถึง', ['อินเทอร์เน็ตและสถานะเครือข่าย: เพื่อดาวน์โหลดข้อมูลสนามและทำการซื้อ', 'การสั่น: เพื่อตอบสนองเมื่อโจมตีโดนและเมื่อชน (ปิดได้ในตั้งค่า)', 'บริการดาวน์โหลดเบื้องหลัง: เพื่อให้ Google Play ดาวน์โหลดข้อมูลเกมจนเสร็จ', 'การเรียกเก็บเงิน: เพื่อซื้อแพ็ก Gem ผ่าน Google Play']],
+      ['ตัวเลือกของคุณ', ['ปิดการสั่น เปลี่ยนภาษาและกราฟิกได้ในตั้งค่า', 'ลบข้อมูลสนามที่ดาวน์โหลดไว้ได้ใน ตั้งค่า → ข้อมูลสนาม', 'รีเซ็ตความคืบหน้าทั้งหมดได้ใน ตั้งค่า → ลบข้อมูล การถอนการติดตั้งเกมจะลบทุกอย่างที่จัดเก็บไว้บนอุปกรณ์ของคุณ', 'ประวัติการซื้อของคุณจะยังอยู่ในบัญชี Google Play ซึ่งคุณสามารถดูประวัติและขอคืนเงินได้']],
+      ['เด็ก', 'Brass Throttle เป็นเกมสำหรับวัยรุ่นและผู้ใหญ่ที่มีความรุนแรงแบบการ์ตูน และไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี เราไม่เก็บรวบรวมข้อมูลส่วนบุคคลจากเด็กโดยเจตนา หากคุณเชื่อว่ามีเด็กให้ข้อมูลผ่านเกม โปรดติดต่อเรา แล้วเราจะช่วยลบข้อมูลนั้น'],
+      ['การเปลี่ยนแปลงนโยบายนี้', 'หากนโยบายนี้มีการเปลี่ยนแปลง — เช่น หากเราเพิ่มฟีเจอร์ใหม่ที่มีการจัดการข้อมูล — เราจะอัปเดตหน้านี้และวันที่ด้านบน'],
+      ['ติดต่อเรา', 'มีคำถามเกี่ยวกับความเป็นส่วนตัวใช่ไหม เขียนถึงเราได้ที่ <a href="mailto:{email}">{email}</a>'],
+    ],
+  },
+};
+
+// ?lang=… → lựa chọn đã lưu → ngôn ngữ trình duyệt/hệ thống → tiếng Anh.
+function match(tag) {
+  const t = String(tag || '').toLowerCase();
+  if (t.startsWith('zh')) return T.zh ? 'zh' : null;
+  const base = t.split('-')[0];
+  return Object.keys(T).find((k) => k === base) || null;
+}
+
+function initial() {
+  const q = match(new URLSearchParams(location.search).get('lang'));
+  if (q) return q;
+  try {
+    const saved = localStorage.getItem('brass-throttle-privacy-lang');
+    if (saved && T[saved]) return saved;
+  } catch (_) {}
+  for (const l of navigator.languages || [navigator.language]) {
+    const m = match(l);
+    if (m) return m;
+  }
+  return 'en';
+}
+
+const fill = (s) => s.replaceAll('{email}', CONTACT).replace(/\{(gplay|gpolicy|unity|refund)\}/g, (_, k) => LINKS[k]);
+
+function render(code) {
+  const t = T[code];
+  document.documentElement.lang = code;
+  document.title = 'Brass Throttle – ' + t.title;
+  document.getElementById('lang-label').textContent = t.lang;
+  document.getElementById('lang').setAttribute('aria-label', t.lang);
+  document.getElementById('title').textContent = t.title;
+  const date = new Intl.DateTimeFormat(code, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(UPDATED);
+  document.getElementById('updated').textContent = t.updated.replace('{date}', date);
+  document.getElementById('intro').textContent = t.intro;
+  document.getElementById('body').innerHTML = t.s.map(([h, ...parts], i) => `
+    <section>
+      <span class="num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+      <div>
+        <h2>${h}</h2>
+        ${parts.map((p) => Array.isArray(p) ? `<ul>${p.map((li) => `<li>${fill(li)}</li>`).join('')}</ul>` : `<p>${fill(p)}</p>`).join('')}
+      </div>
+    </section>`).join('');
+}
+
+const select = document.getElementById('lang');
+select.innerHTML = Object.entries(T).map(([k, v]) => `<option value="${k}" lang="${k}">${v.name}</option>`).join('');
+select.value = initial();
+render(select.value);
+select.addEventListener('change', () => {
+  render(select.value);
+  try { localStorage.setItem('brass-throttle-privacy-lang', select.value); } catch (_) {}
+  const url = new URL(location.href);
+  url.searchParams.set('lang', select.value);
+  history.replaceState(null, '', url);
+});
+</script>
+</body>
+</html>
